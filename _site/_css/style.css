@@ -1,1 +1,233 @@
 
+body {
+   background-image:url(https://cheepfish.neocities.org/bg2.jpg) ; 
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+:root {
+    /* BOX */
+
+    --border: 3px solid rgb(21, 21, 22);
+    --border-radius: 5px;
+    --box-shadow: 5px 5px;
+
+    --container-color: hsla(214, 76%, 92%, 0.65);
+
+
+
+    --border-style: 1px solid var(--border);
+    --drop-shadow-style: drop-shadow(.3rem .3rem 0rem var(--border));
+}
+
+    /* FONT */
+    
+@font-face {
+    font-family: "minecraft";
+    src: url(Minecraft.ttf);
+}
+
+@font-face {
+    font-family: "angel";
+    src: url(Angels.ttf)
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: 0.5fr 3fr 1fr;
+    grid-template-rows: auto 1fr;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+p {
+    font-family: "zitendo";
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    grid-column: 1 / span 3;
+    
+}
+
+.header-title, .headerbgdiv {
+    grid-area: 1 / 1;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    max-height: 132.67px;
+    min-height: 132.67px;
+    object-fit: cover;
+    place-items: center;
+  
+}
+
+.header-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 2;
+}
+
+.headerbgdiv {
+    z-index: 1;
+}
+
+.header-title img {
+    overflow: visible;
+  
+    
+}
+
+.headerbg {
+    border: var(--border);
+    border-radius: 10px;
+}
+
+.logo {
+    overflow: visible;
+    width: 750px;
+ -webkit-animation: pop 2s ease-in-out infinite alternate;
+ animation: pop 2s ease-in-out infinite alternate;
+ -moz-animation: pop 2s ease-in-out infinite alternate;
+}
+  
+@keyframes pop {
+from {
+transform:scale(0.95)
+}
+
+50% {
+transform:scale(1)
+}
+
+to {
+transform:scale(0.95)
+}
+}     
+
+.logoleft, .logoright {
+    width: auto;
+}
+
+.logoleft img {
+    width: 10px;
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 5px;
+    text-align: center;
+    background-color: var(--container-color);
+    border-color: rgb(21, 21, 22);
+    border: var(--border);
+    padding: 10px;
+}
+
+section {
+    border-color: rgb(21, 21, 22);;
+    border-radius: 1px;
+    border-style: solid;
+    box-shadow: var(--box-shadow);
+    padding: 0.3em;
+    margin: 0.5em;
+}
+
+.middle {
+    text-align: center;
+    background-color: hsla(214, 76%, 92%, 0.65);
+    border: var(--border);
+    border-radius: 1px;
+    border-color: rgb(21, 21, 22);
+    border-top: 25px solid rgb(21, 21, 22);
+    border-bottom: 25px solid rgb(21, 21, 22);
+    padding: 20px;
+    overflow-y: auto;
+    margin-top: 5px;
+    font-family: "minecraft";
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 5px;
+    
+}
+
+.button {
+    width: 160px;
+    height: auto;
+    padding: 2px;
+}     
+
+.right-sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: hsla(214, 76%, 92%, 0.65);
+    border-color: rgb(21, 21, 22);
+    border: var(--border);
+    border-radius: 1px;
+    margin-top: 5px;
+    text-align: center;
+    padding: 15px;
+}
+
+aside { 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    place-items: center;
+}
+
+
+.fishofday, .fishofdaytank, .righttank {
+    grid-area: 1 / 1;
+    object-fit: cover;
+}
+
+.fishofday {
+    width: 100px;
+}
+
+.fishofdaytank {
+    width: 200px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(21, 21, 22);
+}
+
+.righttank {
+    width: 200px;
+    max-width: 100%;
+    min-width: 154px;
+    height: auto;
+}
+
+    #statuscafe {
+    padding: .5em;
+    background-color: azure;
+    border: 1px solid midnightblue;
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+} 
+
+.foot {
+    grid-column: 2;
+}
+
