@@ -17,5 +17,5 @@ const feedURL = 'https://status.cafe/users/cheepfish.atom';
               `;
           }
           html += `<p><a href='https://status.cafe/users/cheepfish'>See more at StatusCafe</a></p>`;
-          document.getElementById("feed-reader").innerHTML = html;
+          document.getElementById('feed-reader').innerHTML = html;
         })
