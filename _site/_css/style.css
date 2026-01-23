@@ -12,11 +12,7 @@ body {
     --box-shadow: 5px 5px;
 
     --container-color: hsla(214, 76%, 92%, 0.65);
-
-
-
-    --border-style: 1px solid var(--border);
-    --drop-shadow-style: drop-shadow(.3rem .3rem 0rem var(--border));
+    --box-color: rgb(255, 255, 255);
 }
 
     /* FONT */
@@ -27,8 +23,8 @@ body {
 }
 
 @font-face {
-    font-family: "angel";
-    src: url(Angels.ttf)
+    font-family: "pixel";
+    src: url("../fonts/pix.ttf");
 }
 
 .grid-container {
@@ -42,11 +38,33 @@ body {
 }
 
 p {
-    font-family: "zitendo";
+    
 }
 
 h1 {
-    font-size: 1.5rem;
+    background-color: #a0d0a0;
+    padding: 10px 15px;
+    font-size: 1.3rem;
+    text-align: center;
+    border-bottom: 2px solid rgb(21, 21, 22);
+}
+
+.box-header {
+    background-color: #a0d0a0;
+    padding: 10px 15px;
+    font-size: 1.3rem;
+    text-align: center;
+    border-bottom: 2px solid rgb(21, 21, 22);
+    font-family: "pixel";
+}
+
+section {
+    border-color: rgb(21, 21, 22);
+    border-radius: 1px;
+    border-style: solid;
+    box-shadow: var(--box-shadow);
+    margin: 0.5em;
+   
 }
 
 header {
@@ -135,14 +153,6 @@ transform:scale(0.95)
     padding: 10px;
 }
 
-section {
-    border-color: rgb(21, 21, 22);;
-    border-radius: 1px;
-    border-style: solid;
-    box-shadow: var(--box-shadow);
-    padding: 0.3em;
-    margin: 0.5em;
-}
 
 .middle {
     text-align: center;
@@ -174,12 +184,12 @@ nav {
 .right-sidebar {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     background-color: hsla(214, 76%, 92%, 0.65);
     border-color: rgb(21, 21, 22);
     border: var(--border);
     border-radius: 1px;
     margin-top: 5px;
-    text-align: center;
     padding: 15px;
 }
 
@@ -214,10 +224,8 @@ aside {
     height: auto;
 }
 
-#feed-reader {
-    padding: .5em;
-    background-color: azure;
-    border: 1px solid midnightblue;
+.content {
+    padding: 10px;
 }
 
 .foot {
