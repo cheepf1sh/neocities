@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="16x16" href="https://cheepfish.neocities.org/icon4tab.png">
-    <title>The web site of cheepfish</title>
+    <title>gone fishin'</title>
     <link href="_css/style.css" rel="stylesheet" type="text/css" media="all">
     <script src="_js/bubbles.js"></script>
+    <script src="_js/musicplayer.js" defer></script>
   </head>
 
   <body>
@@ -18,9 +19,9 @@
 
       <header>
         <div class="header-title">
-          <img src="https://cheepfish.neocities.org/fishspin.gif" class="logoleft">
+          <img src="" class="logoleft">
           <img src="https://cheepfish.neocities.org/logo2.png" class="logo">
-          <img src="https://cheepfish.neocities.org/pingufish.png" class="logoright">
+          <img src="" class="logoright">
         </div>
         <div class="headerbgdiv">
           <img src="https://cheepfish.neocities.org/headerbg.gif" class="headerbg" width="1200px"> 
@@ -31,21 +32,46 @@
 
         <div class="welcome-container">
       <section>
-          <div class="box-header">WELCOME!!</div>
-          <p>helloooo welcome to my page this is unda construction : </p>
+          <div class="box-header">
+            <img src="https://cheepfish.neocities.org/welcometotoro.gif">
+            WELCOME!!
+            <img src="https://cheepfish.neocities.org/welcometotoro.gif"></div> 
+          <div class="box-text">
+          <p>Heyooo welcome to my little corner on the web! I made this site primarily to archive my interests and hobbies, but also as a way to put myself out there :-)</p>
+          <p><strong>NOTE:</strong> i have no prior coding experience so the layout may be a bit jank..but i am learning!</p></div>
       </section>
 
       <section>
-          <div class="box-header">UPDATES</div>
-          <p>explosdion</p>
+          <div class="box-header">
+            <img src="https://cheepfish.neocities.org/updatemola.gif">
+            UPDATES
+            <img src="https://cheepfish.neocities.org/updatemola.gif"></div>
+          <div class="box-text">
+          <p><strong>1/24/26</strong> - Finished home page yahooo</p>
       </section>
+
+      <section>
+        <div class="box-header">
+          <img src="https://cheepfish.neocities.org/binkies/todovaporeon.gif">
+          TO-DO
+          <img src="https://cheepfish.neocities.org/binkies/todovaporeon.gif"></div>
+        <div class="box-text">
+          <p>- create about page</p>
+          <p>- so many pages</p>
+          <p>- draw moar....</p>
+          <p>- learn javascript fr</p></div>
+      </section>      
         </div>
 
      <!--NAVBAR-->
 
      <div class="main-mid">
         <div class="middle">
-            <div class="nav-all">NAVIGATION
+          <div class="nav-title-container">
+            <img src="https://cheepfish.neocities.org/dolphin.gif">
+            <div class="nav-title">NAVIGATION</div>
+            <img src="https://cheepfish.neocities.org/dolphin.gif">
+          </div>
       <nav>
           <a href="about-me.html"><img src="https://cheepfish.neocities.org/NAVABOUTLEFT.png" class="button" alt="" onmouseover="this.src='https://cheepfish.neocities.org/NAVABOUTLEFT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/NAVABOUTLEFT.png'"></a>
           <a href="art.html"><img src="https://cheepfish.neocities.org/NAVARTRIGHT.png" class="button" alt="" onmouseover="this.src='https://cheepfish.neocities.org/NAVARTRIGHT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/NAVARTRIGHT.png'"></a>
@@ -59,32 +85,88 @@
           <a href="photos.html"><img src="https://cheepfish.neocities.org/NAVLIBRARYLEFT.png" class="button" alt="" onmouseover="this.src='https://cheepfish.neocities.org/NAVLIBRARYLEFT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/NAVLIBRARYLEFT.png'"></a>
           <a href="photos.html"><img src="https://cheepfish.neocities.org/NAVLINKSRIGHT.png" class="button" alt="" onmouseover="this.src='https://cheepfish.neocities.org/NAVLINKSRIGHT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/NAVLINKSRIGHT.png'"></a>
       </nav>
-            </div>
         </div>
-        <div class="bink">
-              <h2>blabloooooooooooooo</h2>
 
+        <div class="middle-bottom">
+          <div class="player">
+            <div class="window">
+        <div class="title-bar">
+          <div class="title-bar-text"><sub><img class="titlebaricon" src="https://files.catbox.moe/tg55zp.png" alt="cd player icon"></sub> CD player</div>
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"></button>
+          <button aria-label="Maximize"></button>
+          <button aria-label="Close"></button>
         </div>
-    </div>
+        </div>
+        <div class="window-body">
+          <div class="flex">
+        <div id="imagestyle"><img class="ic" src="https://cheepfish.neocities.org/animalcrossingmp.png" alt="momo icon"></div>
+          <div id="musicplayer">
+        <div class="songtitlewindow">
+            <div class="flex"><marquee scrollamount="4" class="songtitle"></marquee><div class="songtitlearrow"></div></div>
+        </div>
+ 
+        <div class="seeking">
+            <div class="current-time">00:00</div>
+ 
+            <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+ 
+            <div class="total-duration">0:00</div>
+        </div>
+ 
+        <table class="controls">
+            <tr>
+                <td>
+                    <div class="prev-track" onclick="prevTrack()"><button><img src="https://files.catbox.moe/hhoh1h.png" class="controlimg"></button></div>
+                </td>
+                <td>
+                    <div class="playpause-track" onclick="playpauseTrack()" ><button><img src="https://files.catbox.moe/w93riq.png" class="controlimg"></button></div>
+                </td>
+                <td>
+                    <div class="next-track" onclick="nextTrack()"><button><img src="https://files.catbox.moe/p4q9gf.png" class="controlimg"></button></div>
+                </td>
+            </tr>
+        </table>
+ 
+        <audio id="music" src=""></audio> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="midbottom-buttons">
+        <img src="https://cheepfish.neocities.org/bestviewedcomputer.gif">
+        <img src="https://cheepfish.neocities.org/graphicdesignpassion.jpg">
+        <img src="https://cheepfish.neocities.org/spidyebutton.jpg"></div>
+         </div>
+         <a href="https://cheepfish.atabook.org/"><img src="https://cheepfish.neocities.org/fishcliiphori.png" class="guestbook" alt="" onmouseover="this.src='https://cheepfish.neocities.org/fishcliiphori2.png'" onmouseout="this.src='https://cheepfish.neocities.org/fishcliiphori.png'"></a>
+             </div>
+      </div>
+
      <!--RIGHT SIDEBAR-->
 
         <div class="right-sidebar">
-          <h1>FISH TANK</h1>
+          <div class="box-header-single">
+            <img src="https://cheepfish.neocities.org/fishtankfish.gif">
+            FISH TANK
+            <img src="https://cheepfish.neocities.org/fishtankfish.gif"></div>
       <aside>
           <img src="https://cheepfish.neocities.org/righttank2.jpg" class="righttank">
-          <img src="https://cheepfish.neocities.org/dancingguy.gif" class="fishofday">
+          <img src="https://cheepfish.neocities.org/binkies/jermafishtank.gif" class="fishofday">
           <img src="https://cheepfish.neocities.org/fishofday.png" class="fishofdaytank">
       </aside>
 
         <div class="status">
       <section>
-          <div class="box-header">CURRENTLY</div>
+          <div class="box-header">
+            <img src="https://cheepfish.neocities.org/currentlyshark.gif">
+            CURRENTLY
+            <img src="https://cheepfish.neocities.org/currentlyshark.gif"></div>
           <div style="background-color: rgb(220, 232, 255); max-height: 85px; overflow: hidden; padding: 10px 10px 0 10px; border: 2px dotted; margin: 8px"><iframe src="https://petrapixel.neocities.org/widgets/statuscafe?center=0&marquee=0&font-family=monospace&font-size=14px&color=#000000&linkColor=#0000fa&username=cheepfish&hideUsername=0&timeColor=#6d0fba" style="border: 0" width="190" title="Status.Cafe Status"></iframe></div>
         <div class="content">
           <p><strong>reading:</strong> The Raven King - Maggie Stiefvater</p>
           <p><strong>listening to:</strong> Therapy II - Viagra Boys</p>
           <p><strong>watching:</strong> N/A</p>
-          <p><strong>playing:</strong> Sky COTL</p>
+          <p><strong>playing:</strong> Sky COTL, Genshin Impact</p>
         </div>
       </section>
           
@@ -92,10 +174,20 @@
         </div>
 
     <!--FOOTER-->
-
+    
         <div class="foot">
       <footer>  
-        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+        <marquee id="buttonscroll">
+          <img src="https://cheepfish.neocities.org/binkies/aquariumjunkie.gif">
+          <img src="https://cheepfish.neocities.org/binkies/homesweethome.gif">
+          <img src="https://cheepfish.neocities.org/binkies/wahoo.gif">
+          <img src="https://cheepfish.neocities.org/binkies/prettyhatemachine.gif">
+          <img src="https://cheepfish.neocities.org/binkies/porygonblinkie.gif">
+          <img src="https://cheepfish.neocities.org/binkies/sparkleon.gif">
+          <img src="https://cheepfish.neocities.org/binkies/splatoon3.gif">
+          <img src="https://cheepfish.neocities.org/binkies/sleepy.gif">
+          <img src="https://cheepfish.neocities.org/binkies/orcas.gif">
+        </marquee>
       </footer>
         </div>
 
