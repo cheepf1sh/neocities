@@ -22,7 +22,7 @@ body {
     
 @font-face {
     font-family: "pixel";
-    src: url("_fonts/pix.ttf") format("truetype");
+    src: url("https://cheepfish.neocities.org/_fonts/pix.ttf") format("truetype");
 }
 
 .grid-container {
