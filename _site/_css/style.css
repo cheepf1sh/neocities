@@ -21,11 +21,6 @@ body {
     /* FONT */
     
 @font-face {
-    font-family: "minecraft";
-    src: url(Minecraft.ttf);
-}
-
-@font-face {
     font-family: "pixel";
     src: url("_fonts/pix.ttf") format("truetype");
 }
