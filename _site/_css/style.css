@@ -125,7 +125,8 @@ header img {
 
 .logo {
     overflow: visible;
-    width: 750px;
+    margin-top: 10px;
+    width: 680px;
  -webkit-animation: pop 2s ease-in-out infinite alternate;
  animation: pop 2s ease-in-out infinite alternate;
  -moz-animation: pop 2s ease-in-out infinite alternate;
