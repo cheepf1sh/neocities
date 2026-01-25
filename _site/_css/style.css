@@ -1,5 +1,5 @@
 body {
-   background-image:url(https://cheepfish.neocities.org/bg2.jpg) ; 
+   background-image:url(https://cheepfish.neocities.org/img/sitebackground.jpg) ; 
    background-attachment: fixed;
    background-size: cover;
 }
@@ -27,7 +27,7 @@ body {
 
 @font-face {
     font-family: "pixel";
-    src: url("../fonts/pix.ttf") format("truetype");
+    src: url("_fonts/pix.ttf") format("truetype");
 }
 
 .grid-container {
