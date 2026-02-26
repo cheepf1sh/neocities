@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cheepfish.neocities.org/png/icon4tab.png">
+    <title>gone fishin'</title>
+    <link href="_css/styleinventory.css" rel="stylesheet" type="text/css" media="all">
+   
+  </head>
+
+  <body>
+    <div class="title"><h1><img src="https://cheepfish.neocities.org/gif/orca.gif"> ESSENTIALS <img src="https://cheepfish.neocities.org/gif/orca.gif"></h1></div>
+    <div class="main">
+      <div class="box1">
+        <div class="backpack">
+          <img src="https://cheepfish.neocities.org/png/INVbackpack2.png" id="row1col1" width="100%">
+          <span class="tooltip"><b>Converse GO LO Miniature Backpack</b></span>
+        </div>
+        <div class="bottle">
+          <img src="https://cheepfish.neocities.org/png/INVbottle2.png" id="row1col2" width="35%">
+          <span class="tooltip"><b>Thermal Water Bottle</b></span>
+        </div>
+        <div class="phone">
+          <img src="https://cheepfish.neocities.org/png/INVphone2%20(1)%20(1).png" id="row1col3" width="60%">
+          <span class="tooltip"><b>iPhone 15</b></span>
+        </div>
+      </div>
+
+      <div class="box1">
+        <div class="pouch">
+          <img src="https://cheepfish.neocities.org/png/INVpouch2.png" id="row2col1" width="75%">
+          <span class="tooltip"><b>HOBONICHI Drawer Pouch</b></span>
+        </div>
+        <div class="pens">
+          <img src="https://cheepfish.neocities.org/png/INVpens2.png" id="row2col2" width="55%">
+          <span class="tooltip"><b><li>1. DAISO Ballpoint Pen</li><li>2. Sharpie Pen 0.4mm</li><li>3. Tombow Fudenosuke Brush Pen</li><li>4. Pencil I found on the ground a decade ago</li></b></span>
+        </div>
+        <div class="sketchbook">
+          <img src="https://cheepfish.neocities.org/png/INVsketchbook2.png" id="row2col3" width="80%">
+          <span class="tooltip"><b>DAISO B5 Note</b></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="box2">
+        <div class="headphones">
+          <img src="https://cheepfish.neocities.org/png/INVheadphones2.png" id="row3col1" width="90%">
+          <span class="tooltip"><b>Sony WHCH720N</b></span>
+        </div>
+        <div class="earbuds">
+          <img src="https://cheepfish.neocities.org/png/INVearbuds2.png" id="row3col2" width="45%">
+          <span class="tooltip"><b>Earbuds</b></span>
+        </div>
+        <div class="wallet">
+          <img src="https://cheepfish.neocities.org/png/INVwallet2.png" id="row3col3" width="60%">
+          <span class="tooltip"><b>Wallet</b></span>
+        </div>
+      </div>
+    
+
+    <div class="box2">
+        <div class="tissues">
+          <img src="https://cheepfish.neocities.org/png/INVtissues2.png" id="row4col1" width="55%">
+          <span class="tooltip"><b>Free tissues from a con lol</b></span>
+        </div>
+        <div class="glasses">
+          <img src="https://cheepfish.neocities.org/png/INVglasses2.png" id="row4col2" width="65%">
+          <span class="tooltip"><b>Glasses</b></span>
+        </div>
+        <div class="sunscreen">
+          <img src="https://cheepfish.neocities.org/png/INVsunscreen2.png" id="row4col3" width="85%">
+          <span class="tooltip"><li><b>1. Skin Aqua Super Moisture UV Essence</b></li><li><b>2. Round Lab Birch Juice Moisturizing Sunscreen</b></li></span>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    var tooltip = document.querySelectorAll('.tooltip');
+
+document.addEventListener('mousemove', fn, false);
+
+function fn(e) {
+    for (var i=tooltip.length; i--;) {
+        tooltip[i].style.left = (e.clientX + 8) + 'px';
+        tooltip[i].style.top = (e.clientY - 20) + 'px';
+    }
+}
+  </script>
+
