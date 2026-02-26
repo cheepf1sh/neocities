@@ -1,0 +1,116 @@
+body {
+    background-color: hsla(213, 76%, 92%, 0.815);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+      overflow: scroll;
+      overflow-x: hidden;
+      height: 10em;
+      padding: 1rem;
+    }
+
+    body::-webkit-scrollbar {
+        width: 8px;
+        }
+
+        body::-webkit-scrollbar-track {
+        background-color: #e4e4e4;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        }
+
+        body::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: #e4e4e4;
+        border: 1px solid #aaa;
+        }
+        
+
+@font-face {
+    font-family: "pixel";
+    src: url("https://cheepfish.neocities.org/_fonts/pix.ttf") format("truetype");
+}
+
+#box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+
+}
+
+#portrait {
+  grid-column: 2;
+  grid-row: 1;
+  max-width: 256px;
+  max-height: 256px;
+}
+
+.port{
+  margin-top: 32px;
+}
+
+.geninfo {
+  grid-column: 1  / span 2;
+  grid-row: 1;
+}
+
+.intro {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+.abtsite {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
+.fact {
+  grid-column: 1 / span 2;
+}
+
+#pfp {
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border:3px solid rgb(255, 133, 63);
+  cursor: pointer;
+    z-index: 100;
+    filter: brightness(90%);
+}
+
+#pfp:hover{
+box-shadow: 2px 2px 3px rgba(93, 113, 202, 0.76);  
+image-rendering: auto;
+filter: brightness(100%);
+}
+
+h1 {
+  font-family: "pixel";
+  font-size: 25px;
+  padding: 10px;
+  padding-left: 20px;
+  background: linear-gradient(to bottom, #ffefba 0%, #f1f1f1 24%, #ffefba 79%, #ffbd71 100%);
+  box-shadow: 1px 5px 15px 1px rgba(186, 161, 255, 0.671);
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+
+.gen {
+  width: 35%;
+}
+
+p {
+  font-family: DejaVu Sans Mono, monospace;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+mark {
+  background-color: #ffc853;
+}
+
+#snail {
+  padding-right: 14px;
+  padding-left: 10px;
+}

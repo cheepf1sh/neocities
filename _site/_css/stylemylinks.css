@@ -1,0 +1,69 @@
+
+body {
+    background-color: hsla(213, 76%, 92%, 0.815);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    overflow: scroll;
+      overflow-x: hidden;
+      height: 10em;
+      padding: 1rem;
+    }
+
+    body::-webkit-scrollbar {
+        width: 8px;
+        }
+
+        body::-webkit-scrollbar-track {
+        background-color: #e4e4e4;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        }
+
+        body::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: #e4e4e4;
+        border: 1px solid #aaa;
+    }
+
+    @font-face {
+    font-family: "pixel";
+    src: url("https://cheepfish.neocities.org/_fonts/pix.ttf") format("truetype");
+    }
+
+   h1 {
+    font-family: "pixel";
+    font-size: 25px;
+    padding: 10px;
+    padding-left: 20px;
+    background: linear-gradient(to bottom, #ffefba 0%, #f1f1f1 24%, #ffefba 79%, #ffbd71 100%);
+    box-shadow: 1px 5px 15px 1px rgba(186, 161, 255, 0.671);
+    border-radius: 30px;
+    margin-bottom: 15px;
+    }
+
+    p {
+    font-family: DejaVu Sans Mono, monospace;
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .video {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-bottom: 2em;
+    }
+
+    iframe {
+        margin: 0 auto;
+       margin-top: 1em;
+    }

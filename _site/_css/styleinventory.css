@@ -1,0 +1,239 @@
+body {
+    background-color: hsla(213, 76%, 92%, 0.815);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+      overflow: scroll;
+      overflow-x: hidden;
+      height: 10em;
+      padding: 1rem;
+    }
+
+    body::-webkit-scrollbar {
+        width: 8px;
+        }
+
+        body::-webkit-scrollbar-track {
+        background-color: #e4e4e4;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        }
+
+        body::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: #e4e4e4;
+        border: 1px solid #aaa;
+        }
+   
+
+        @font-face {
+    font-family: "pixel";
+    src: url("https://cheepfish.neocities.org/_fonts/pix.ttf") format("truetype");
+}
+
+    .title h1, img{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    h1 {
+    font-family: "pixel";
+    font-size: 25px;
+    padding: 10px;
+    padding-left: 20px;
+    background: linear-gradient(to bottom, #ffefba 0%, #f1f1f1 24%, #ffefba 79%, #ffbd71 100%);
+    box-shadow: 1px 5px 15px 1px rgba(186, 161, 255, 0.671);
+    border-radius: 30px;
+    margin-bottom: 15px;
+    }
+
+    li {
+     list-style: none; 
+    }
+    
+    .tooltip {
+      display: none;
+      background: rgb(233, 235, 236);
+      border-radius: 0.5em;
+      padding: 2px;
+      position: fixed;
+      z-index: 1000;
+      font-family: DejaVu Sans Mono, monospace;
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .box1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .box2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    #row1col1, #row1col2, #row1col3, #row2col1, #row2col2, #row2col3, #row3col1, #row3col2, #row3col3, #row4col1, #row4col2, #row4col3 {
+      filter: none;
+      -webkit-transition: all 0.8s ease;
+      -moz-transition: all 0.8s ease;
+      transition: all 0.8s ease;
+    }
+
+    #row1col1:hover, #row1col2:hover, #row1col3:hover, #row2col1:hover, #row2col2:hover, #row2col3:hover, #row3col1:hover, #row3col2:hover, #row3col3:hover, #row4col1:hover, #row4col2:hover, #row4col3:hover {
+      transform: scale(1.5);
+      filter: contrast(140%);
+    }
+
+    /* ROW 1 */
+    
+    .backpack:hover .tooltip {
+      display: block;
+    }
+
+    .bottle:hover .tooltip {
+      display: block;
+    }
+
+    .phone:hover .tooltip {
+      display: block;
+    }
+
+    .backpack {
+      position: relative;
+    }
+
+    #row1col1 {
+      position: absolute;
+    }
+
+    #row1col1 {
+      margin-left: 30px;
+    }
+
+    #row1col2 {
+      margin-left: 80px;
+    }
+
+    #row1col3 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ROW 2 */
+
+    .pouch:hover .tooltip {
+      display: block;
+    }
+
+    .pens:hover .tooltip {
+      display: block;
+    }
+
+    .sketchbook:hover .tooltip {
+      display: block;
+    }
+
+    #row2col1 {
+      margin-left: 50px;
+    }
+
+    #row2col2 {
+      margin-top: 42px;
+      margin-left: 53px;
+    }
+
+    #row2col3 {
+      margin-top: 1em;
+      margin-left: 1.3em;
+    }
+
+    /* ROW 3 */
+
+    .headphones:hover .tooltip {
+      display: block;
+    }
+
+    .earbuds:hover .tooltip {
+      display: block;
+    }
+
+    .wallet:hover .tooltip {
+      display: block;
+    }
+
+    .headphones {
+      grid-row: span 2;
+    }
+
+    .wallet {
+      position: relative;
+      grid-column: 2;
+    }
+
+    #row3col1 {
+      margin-top: 1em;
+      margin-left: 50px;
+    }
+
+    #row3col2 {
+      margin-top: 3em;
+      margin-left: 3.8em;
+    }
+
+    #row3col3 {
+      position: absolute;
+      margin-bottom: 4em;
+      margin-left: 3.5em;
+    }
+
+    /* ROW 4 */
+    
+    .tissues:hover .tooltip {
+      display: block;
+    }
+
+    .glasses:hover .tooltip {
+      display: block;
+    }
+
+    .sunscreen:hover .tooltip {
+      display: block;
+    }
+
+    .glasses {
+      grid-column: 1;
+      grid-row: 2;
+    }
+    
+    .sunscreen {
+      grid-column: 2;
+      grid-row: span 2;
+    }
+
+    #row4col1 {
+      margin-top: 1em;
+      margin-left: 4.5em;
+    }
+
+    #row4col2 {
+      margin-top: 1.5em;
+      margin-left: 4.5em;
+    }
+
+    #row4col3 {
+      margin-top: 1.2em;
+      margin-left: 1.3em;
+    }
+
+
