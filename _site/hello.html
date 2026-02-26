@@ -71,5 +71,11 @@
         document.getElementById("portrait").innerHTML = portrait[pfp],
         pfp = (pfp + 1) % portrait.length;
         });
+
+      if (navigator.userAgent === "Screenjesus") {
+    document.body.innerHTML = '<img src="https://cheepfish.neocities.org/img/thumbhello.png" style="width:100vw;height:100vh;object-fit:cover;">';
+  }
+      
     </script>
+
 </html>
