@@ -73,8 +73,6 @@ li {
 	font-size: 15px;
 	width: 90px;
 	text-align: center;
-	corner-shape: bevel square square bevel;
-  	border-radius: 20px 50% 50% 20px / 20px 48px 48px 20px;
 	border: var(--border);
 	background-image: url(https://cheepfish.neocities.org/img/navtagborder3.jpg);
 	
@@ -139,5 +137,6 @@ iframe {
 	max-width: 100%;
 	height: auto;
 }
+
 
 
