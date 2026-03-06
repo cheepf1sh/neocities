@@ -26,12 +26,12 @@ body {
 
 @font-face {
     font-family: "pixel";
-    src: url("../fonts/pix.ttf") format("truetype");
+    src: url("https://cheepfish.neocities.org/_fonts/pix.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "hand";
-    src: url("../fonts/Handwriting-Regular.otf")  format("opentype");
+    src: url("https://cheepfish.neocities.org/_fonts/Handwriting-Regular.otf")  format("opentype");
 }
 
 .grid-container {
@@ -1531,3 +1531,4 @@ input[type=range] {
     height:15px;
     width:15px;
     }
+
