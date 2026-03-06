@@ -326,6 +326,8 @@ transform:scale(0.95)
     margin-top: 8px;
     z-index: 2000;
     margin-left: -4px;
+    margin-top: 27px;
+    padding-bottom: 7px;
 }
 
 .pictitle p {
@@ -1527,4 +1529,5 @@ input[type=range] {
     width:15px;
 
     }
+
 
