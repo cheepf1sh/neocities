@@ -90,8 +90,11 @@ nav ul {
 	list-style: none;
 }
 
-nav ul li {
-	padding: 0.6em;
+nav li {
+	padding-left: 0.6em;
+	padding-top: 0.6em;
+	padding-bottom: 0.6em;
+	padding-right: 1.1em;
 	border-right: none;
 	margin-bottom: 0.8em;
 }
@@ -137,6 +140,7 @@ iframe {
 	max-width: 100%;
 	height: auto;
 }
+
 
 
 
