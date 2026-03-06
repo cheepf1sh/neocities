@@ -26,12 +26,12 @@ body {
 
 @font-face {
     font-family: "pixel";
-    src: url("https://cheepfish.neocities.org/_fonts/pix.ttf") format("truetype");
+    src: url("../fonts/pix.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "hand";
-    src: url("https://cheepfish.neocities.org/_fonts/Handwriting-Regular.otf")  format("opentype");
+    src: url("../fonts/Handwriting-Regular.otf")  format("opentype");
 }
 
 .grid-container {
@@ -43,6 +43,7 @@ body {
     margin: auto;
     margin-top: 40px;
     position: relative;
+    aspect-ratio: 1 / 1;
 }
 
 p {
@@ -697,7 +698,7 @@ animation-iteration-count: infinite;
 .nav-header {
     display: flex;
     justify-content: start;
-    background: linear-gradient(to right, #5b25f0, rgb(200, 255, 168) 340px, #5b25f0 700px);
+    background: linear-gradient(to right, #5b25f0, rgb(181, 168, 255) 340px, #5b25f0 700px);
     padding: 9px;
     width: 645px;
     margin-left: -7px;
@@ -708,7 +709,7 @@ animation-iteration-count: infinite;
 }
 
 .nav-header2 {
-    background: linear-gradient(to right,  #5b25f0, rgb(200, 255, 168)  340px, #5b25f0 700px);
+    background: linear-gradient(to right,  #5b25f0, rgb(181, 168, 255)  340px, #5b25f0 700px);
     padding: 7px;
     height: 20px;
     width: 648px;
@@ -726,12 +727,14 @@ nav {
     font-family: "pixel";
     font-size: 20px;
     margin-left: 10px;
+    color: rgb(200, 255, 168);
 }
 
 .nav-title2 {
     font-family: "pixel";
     font-size: 20px;
     margin-left: 10px;
+    color: rgb(200, 255, 168);
 }
 
 .button {
@@ -845,7 +848,7 @@ transform: translate(0, -0px);
 .top-tank {
     display: flex;
     justify-content: start;
-    background: linear-gradient(to right, #5b25f0, rgb(200, 255, 168)  140px, #5b25f0 400px);
+    background: linear-gradient(to right, #5b25f0, rgb(181, 168, 255)  140px, #5b25f0 400px);
     padding: 9px;
     width: 340px;
     margin-left: -8px;
@@ -856,7 +859,7 @@ transform: translate(0, -0px);
 }
 
 .bot-tank {
-    background: linear-gradient(to right,  #5b25f0, rgb(200, 255, 168)  140px, #5b25f0 400px);
+    background: linear-gradient(to right,  #5b25f0, rgb(181, 168, 255) 140px, #5b25f0 400px);
     padding: 7px;
     height: 20px;
     width: 344px;
@@ -920,7 +923,7 @@ transform: translate(0, -0px);
 .top-tank2 {
     display: flex;
     justify-content: start;
-    background: linear-gradient(to right, #5b25f0, rgb(200, 255, 168)  140px, #5b25f0 400px);
+    background: linear-gradient(to right, #5b25f0, rgb(181, 168, 255)  140px, #5b25f0 400px);
     padding: 9px;
     width: 340px;
     margin-left: -6px;
@@ -931,7 +934,7 @@ transform: translate(0, -0px);
 }
 
 .bot-tank2 {
-    background: linear-gradient(to right,#5b25f0, rgb(200, 255, 168)  140px, #5b25f0 400px);
+    background: linear-gradient(to right,#5b25f0, rgb(181, 168, 255)  140px, #5b25f0 400px);
     padding: 7px;
     height: 20px;
     width: 340px;
@@ -1121,7 +1124,7 @@ from { top: 0; } to { top: 210px; }
 .top-tank3 {
     display: flex;
     justify-content: start;
-    background: linear-gradient(to right, #5b25f0, rgb(200, 255, 168) 240px, #5b25f0 500px);
+    background: linear-gradient(to right, #5b25f0, rgb(181, 168, 255) 240px, #5b25f0 500px);
     padding: 9px;
     width: 565px;
     margin-left: -8px;
@@ -1132,7 +1135,7 @@ from { top: 0; } to { top: 210px; }
 }
 
 .bot-tank3 {
-    background: linear-gradient(to right,#5b25f0, rgb(200, 255, 168) 240px, #5b25f0 500px);
+    background: linear-gradient(to right,#5b25f0, rgb(181, 168, 255) 240px, #5b25f0 500px);
     padding: 7px;
     height: 20px;
     width: 565px;
@@ -1527,7 +1530,4 @@ input[type=range] {
     .controlimg {
     height:15px;
     width:15px;
-
     }
-
-
