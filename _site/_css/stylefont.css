@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "pixel";
+    src: url("../fonts/pix.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "hand";
+    src: url("../fonts/Handwriting-Regular.otf")  format("opentype");
+}
