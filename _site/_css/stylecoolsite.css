@@ -1,0 +1,372 @@
+body {
+   background-image:url(https://cheepfish.neocities.org/img/coolsitebg2.jpg) ; 
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+@font-face {
+    font-family: "pixel";
+    src: url("../fonts/pix.ttf") format("truetype");
+}
+
+:root {
+ 
+  --width:250px;
+  --height:calc(var(--width) / 2);
+
+    /* BOX */
+
+    --box-shadow: 6px 6px #5b25f0;
+    --below: drop-shadow(3px 4px 4px #262726b9);
+
+    /* COLOR */
+
+    --container-color: hsla(120, 100%, 97%, 0.342);
+    --box-color: rgb(255, 255, 255);
+   
+}
+
+.top {
+    background-color: rgb(7, 5, 24);
+    border: 3px solid #e0ff8b;
+    border-radius: 1em;
+    margin-bottom: 2em;
+    padding: 0.2em 1em 0.2em 1em;
+}
+
+/***** CAUTION *****/
+
+.home {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.7em;
+    margin-top: 0.5em;
+}
+
+#caution1 {
+    width: 140px;
+}
+
+#caution2 {
+    width: 120px;
+}
+
+#caution3 {
+    width: 200px;
+}
+
+#caution4 {
+    width: 200px;
+}
+
+#caution5 {
+    width: 80px;
+}
+
+#caution6 {
+    width: 160px;
+}
+
+h1, h2 {
+    font-family: "pixel";
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+mark {
+    padding: 3px;
+    background-color: #dfff6a;
+}
+
+p {
+    font-family: DejaVu Sans Mono, monospace;
+    margin: 5px;
+}
+
+.main-mid, .main-mid2 {
+    display: flex;
+    flex-direction: column;
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    width: 840px;
+    margin: 0 auto;
+    filter: drop-shadow(0 0 1rem rgb(210, 255, 214));
+}
+
+.main-mid2 {
+    margin-top: 3em;
+}
+
+.middle {
+    text-align: center;
+    background-color: var(--container-color);
+    padding: 20px 30px 20px 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-left: 2px solid #05010f;
+    border-right: 2px solid #05010f;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: start;
+    background: linear-gradient(to right, #05010f, rgb(88, 88, 92) 340px, #05010f 700px);
+    padding: 9px;
+    width: 840px;
+    margin-left: -9px;
+    font-family: "pixel";
+    font-size: 1.3rem;
+    color: aliceblue;
+    text-align: center;
+}
+
+.nav-header2 {
+    display: flex;
+    justify-content: end;
+    background: linear-gradient(to right, #05010f, rgb(88, 88, 92) 340px, #05010f 700px);
+    padding: 9px;
+    width: 840px;
+    margin-left: -9px;
+    font-family: "pixel";
+    font-size: 1.3rem;
+    color: aliceblue;
+    text-align: center;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 5px;
+}
+
+.nav-title {
+    font-family: "pixel";
+    font-size: 20px;
+    margin-left: 10px;
+    color: rgb(222, 255, 168);
+}
+
+.button {
+    width: 210px;
+    height: auto;
+    padding: 2px;
+}     
+
+.entrapment {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+}
+
+.press, .press2 {
+    z-index: 100;
+}
+
+.press, .press2, .fish {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.press, .press2 {
+    margin-bottom: 6px;
+}
+
+/***** FISH OF DESPAIR AND DOOM *****/
+
+.press img {
+    width: 72px;
+}
+
+.press2 img {
+    width: 72px;
+}
+
+.press2 {
+    width: 140px;
+    margin-bottom: 10px;
+    margin-right: 7px;
+}
+
+img#fish1.button, img#fish9.button {
+    width: 100%;
+    margin-left: 10px;
+}
+
+img#fish2.button, img#fish3.button, img#fish4.button {
+    width: 115%;
+}
+
+img#fish5.button {
+    width: 124%;
+    margin-left: -12px;
+}
+
+img#fish6.button {
+    width: 100%;
+    margin-left: 17px;
+}
+
+img#fish10.button {
+    width: 114%;
+}
+
+img#fish7.button {
+    width: 115%;
+}
+
+/***** BUTTON ADJ *****/
+
+img#fish1.agh, img#fish2.agh {
+    margin-left: 24px;
+}
+
+img#fish3.agh, img#fish5.agh {
+    margin-left: 30px;
+}
+
+img#fish4.agh, img#fish6.agh {
+    margin-left: 50px;
+}
+
+img#fish7.agh {
+    margin-left: 47px;
+}
+
+img#fish9.agh {
+    margin-left: 47px;
+    width: 65px;
+}
+
+img#fish10.agh {
+    margin-left: 38px;
+}
+
+img#fish11.agh {
+    margin-left: 10px;
+}
+
+img#fish12.agh {
+    margin-left: 7px;
+}
+
+/***** ANIMATION *****/
+
+ .press {
+      -webkit-transition: all 0.8s ease;
+      -moz-transition: all 0.8s ease;
+      transition: all 0.8s ease;
+    }
+
+    .press:hover {
+      transform: scale(1.2);
+    }
+
+
+#fish1, #fish3, .buttonbg, .buttongif, .currentlyfish, #fish6, #fish8, #fish11 {
+animation-name: float1; 
+animation-duration: 4s; 
+animation-iteration-count: infinite; 
+animation-timing-function: ease-in-out;
+} 
+
+@keyframes float1 { 
+0% { 
+transform: translate(0,  0px); 
+} 
+
+50%  { 
+transform: translate(0, 5px); 
+} 
+
+100%   {
+transform: translate(0, -0px); 
+} 
+}     
+
+#fish2, #fish7, #fish9, #fish12 {
+animation-name: float2; 
+animation-duration: 3s; 
+animation-iteration-count: infinite; 
+animation-timing-function: ease-in-out;
+} 
+
+@keyframes float2 { 
+0% { 
+transform: translate(0,  0px); 
+} 
+
+50%  { 
+transform: translate(0, 5px); 
+} 
+
+100%   {
+transform: translate(0, -0px); 
+} 
+}  
+
+#fish4, #fish5, #fish10, #fish13 {
+animation-name: float3; 
+animation-duration: 4s; 
+animation-iteration-count: infinite; 
+animation-timing-function: ease-in-out;
+} 
+
+@keyframes float3 { 
+0% { 
+transform: translate(0,  0px); 
+} 
+
+50%  { 
+transform: translate(0, 8px); 
+} 
+
+100%   {
+transform: translate(0, -0px); 
+} 
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 2.5em;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.post img {
+    width: 290px;
+    margin-top: -24px;
+    filter: hue-rotate(10deg);
+}
+
+.note {
+    position: absolute;
+    width: 250px;
+    color: rgb(0, 0, 0);
+    transform: rotate(1deg);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.fool img {
+    width: 500px;
+    border: 3px solid #05010f;
+    border-radius: 1em;
+    filter: drop-shadow(0 0 1rem rgb(210, 255, 214));
+}
