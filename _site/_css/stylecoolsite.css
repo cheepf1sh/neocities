@@ -4,10 +4,6 @@ body {
    background-size: cover;
 }
 
-@font-face {
-    font-family: "pixel";
-    src: url("../fonts/pix.ttf") format("truetype");
-}
 
 :root {
  
