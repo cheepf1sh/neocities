@@ -7,3 +7,8 @@
     font-family: "hand";
     src: url("https://cheepfish.neocities.org/_fonts/Handwriting-Regular.otf")  format("opentype");
 }
+
+@font-face {
+    font-family: "pox";
+    src: url("https://cheepfish.neocities.org/_fonts/Pixelmania.ttf") format("truetype");
+}
