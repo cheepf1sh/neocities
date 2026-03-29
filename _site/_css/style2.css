@@ -248,10 +248,10 @@ transform:scale(0.95)
     height: 200px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-self: center;
     position: relative;
-    margin-top: 110px;
-    margin-left: 180px;
+    margin-top: 95px;
+    margin-right: -700px;
     filter: var(--below);
 }
 
@@ -283,9 +283,10 @@ transform:scale(0.95)
 
 .todo {
     position: absolute;
-    width: 120px;
+    width: 154px;
     height: 158px;
     padding-bottom: 20px;
+    text-align: center;
 }
 
 .picofmonth {
@@ -429,7 +430,6 @@ transform:scale(0.95)
     width: 185px;
     height: 185px;
     transform: rotate(7deg);
-    margin-top: 10px;
     margin-right: -330px;
     filter: var(--below);
 }
@@ -579,7 +579,7 @@ animation-iteration-count: infinite;
 .binkie {
     grid-row: 4;
     grid-column: 1;
-    z-index: 100;
+    z-index: 30;
     display: flex;
     align-items: center;
     justify-self: center;
@@ -588,7 +588,7 @@ animation-iteration-count: infinite;
     height: 300px;
     transform: rotate(-4deg);
     margin-left: -310px;
-    margin-top: -5px;
+    margin-top: -25px;
     filter: var(--below);
 }
 
@@ -675,6 +675,27 @@ animation-iteration-count: infinite;
 .updatescontent p {
     font-size: 14px;
 }
+
+.door {
+    grid-row: 4;
+    grid-column: 2;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin-top: 140px;
+    margin-right: -635px;
+    transform: rotate(-7deg);
+    filter: drop-shadow(0px 30px 40px #7eff72e5);
+}
+
+#doorimg {
+    width: 170px;
+}
+
 
 
 .main-mid {
@@ -813,7 +834,7 @@ transform: translate(0, -0px);
     position: absolute;
     transform: rotate(-7deg);
     z-index: 200;
-    filter: var(--below);
+    filter: drop-shadow(0px 0px 30px #d7ff46e5);
 }
 
 .fishclip {
