@@ -12,3 +12,28 @@
     font-family: "pox";
     src: url("https://cheepfish.neocities.org/_fonts/Pixelmania.ttf") format("truetype");
 }
+
+@font-face {
+    font-family: "crang";
+    src: url("https://cheepfish.neocities.org/_fonts/Crang.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Fipps";
+    src: url("https://cheepfish.neocities.org/_fonts/Fipps.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "cubix";
+    src: url("https://cheepfish.neocities.org/_fonts/Cubixcode.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "hiscore";
+    src: url("https://cheepfish.neocities.org/_fonts/HISCORE.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "TTLakes";
+    src: url("https://cheepfish.neocities.org/_fonts/TTLakes%20DemiBold.ttf") format("truetype");
+}
