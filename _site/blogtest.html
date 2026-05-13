@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cheepfish.neocities.org/png/icon4tab.png">
+    <title>gone fishin'</title>
+    <link href="_css/stylefont.css" rel="stylesheet" type="text/css" media="all">
+    <link href="_css/styleblogentry.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+
+  <body>
+    <div class="content">
+        <h1>testing123</h1>
+      <div class="writing">
+        <p>Woaw first blog post of my life...!!!! Ok confession time. I've been intentionally delaying the making of this page because I was struggling with what I wanted to do with it tbh...I'm a fairly private person which is pretty ironic considering how much I used to overshare when I was a stupid ass kid. However, I think there is still a part of me that desires to connect with others, whether it be through my art or these shoddy blog posts, so maybe this site was a byproduct of that. I really don't know how much I’ll use this part of my site, but that's the beauty of a personal website!! I can just do whateva without a care in the world. I think that is also why I've been having so much fun learning to code. There's no expectations I hold against myself when it comes to making any of these pages and it is so damn freeing. </p>
+        <img loading="lazy" onclick="openLightbox(this)" class="gallery-img" src="https://cheepfish.neocities.org/blog/BLOGMS1.png">
+      </div>
+    </div>
+
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" class="lightbox-content">
+</div>
+
+<script>
+function openLightbox(imgToOpen) {
+  let lightbox = document.getElementById("lightbox");
+  let lightboxImg = document.getElementById("lightbox-img");
+  
+  lightbox.style.display = "block";
+  lightboxImg.src = imgToOpen.src;
+}
+
+function closeLightbox() {
+  let lightbox = document.getElementById("lightbox");
+  lightbox.style.display = "none";
+}
+
+</script>
+
+  </body>

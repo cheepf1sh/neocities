@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cheepfish.neocities.org/png/icon4tab.png">
+    <title>gone fishin'</title>
+    <link href="_css/stylefont.css" rel="stylesheet" type="text/css" media="all">
+    <link href="_css/styleblogentry.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+
+  <body>
+    <div class="content">
+        <h1>foolish thoughts from a foolish guy</h1>
+      <div class="writing">
+        <p>Hellooooo and welcome to my evil lair where I share whatever I want!!! I just want to preface that I am no writer, in fact I kind of despise writing LOL but I do think it is an important skill to have so maybe I can slowly improve the way I articulate my thoughts through these blog posts! Or I may just end up talking about Childe for 10 hours straight. Probably the latter. </p>
+
+        <p>This is also where I dump all my art since I don’t want to clog my gallery up with 5 trillion doodles. It's the only place where I'll share the ugliest drawings known 2 man as well...</p>
+
+        <p>Anyways, feel free to peer into my grubby brain and thanks for stopping by!</p>
+    <div class="img" style="display: flex; justify-content: center;">
+        <img loading="lazy" onclick="openLightbox(this)" class="gallery-img" src="https://cheepfish.neocities.org/blog/BLOGMS2.png"  style="margin-top: 0.2em; width: 60%;">
+    </div>
+      </div>
+    </div>
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" class="lightbox-content">
+</div>
+
+<script>
+function openLightbox(imgToOpen) {
+  let lightbox = document.getElementById("lightbox");
+  let lightboxImg = document.getElementById("lightbox-img");
+  
+  lightbox.style.display = "block";
+  lightboxImg.src = imgToOpen.src;
+}
+
+function closeLightbox() {
+  let lightbox = document.getElementById("lightbox");
+  lightbox.style.display = "none";
+}
+
+</script>
+
+  </body>
