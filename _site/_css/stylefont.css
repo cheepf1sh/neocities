@@ -37,3 +37,14 @@
     font-family: "TTLakes";
     src: url("https://cheepfish.neocities.org/_fonts/TTLakes%20DemiBold.ttf") format("truetype");
 }
+
+@font-face {
+    font-family: "times";
+    src: url("https://cheepfish.neocities.org/_fonts/TimesNewRomance.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "timesb";
+    src: url("https://cheepfish.neocities.org/_fonts/TimesNewRomanceBold.otf") format("opentype");
+}
+
