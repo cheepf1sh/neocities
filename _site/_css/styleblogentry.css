@@ -1,3 +1,21 @@
+body::-webkit-scrollbar {
+        width: 8px;
+        }
+
+        body::-webkit-scrollbar-track {
+        background-color: #e4e4e4;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        }
+
+        body::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: #e4e4e4;
+        border: 1px solid #aaa;
+        }
+
 h1 {
     margin: 0;
     /***** background: linear-gradient(to left, #f1f1f148 24%, #ffeeb8cc 79%, #ffc788 100%);*****/
