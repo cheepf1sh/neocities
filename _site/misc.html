@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cheepfish.neocities.org/png/icon4tab.png">
+    <title>gone fishin'</title>
+    <link href="_css/stylefont.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+
+  <style>
+body {
+   background-image:url(https://cheepfish.neocities.org/collection/MISCbg3.jpg) ; 
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+h1 {
+    font-family: "Fipps";
+    background-color: rgb(243, 255, 255);
+    color: rgb(46, 125, 145);
+    padding: 0 0.7em 0.6em 0.7em;
+    width: fit-content;
+    font-size: 2.8vw;
+    margin: 0 auto;
+    margin-top: 0.5em;
+    border-radius: 30px;
+    border: 1.7px solid #bcd0d8;
+    box-shadow: inset 0px -5px 5px -5px #7ca4c5, 0px 0px 5px 0px #dfe7e7;
+}
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(243, 255, 255);
+    color: rgb(46, 125, 145);
+    padding: 0.7em;
+    font-size: 1.7vw;
+    text-align: center;
+    border-radius: 30px;
+    border: 1.7px solid #bcd0d8;
+    box-shadow: inset 0px -5px 5px -5px #7ca4c5, 0px 0px 5px 0px #dfe7e7;
+}
+
+.desc {
+    color: rgb(46, 125, 145);
+    font-size: 18px;
+    text-align: center;
+    font-family: "TTLakes";
+    padding: 1em;
+    width: 11vw;
+    height: 11vw;
+    background-color: rgb(245, 255, 255);
+    border-radius: 30vw;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.desc::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
+
+.desc::-webkit-scrollbar-thumb {
+      background: transparent;
+    }
+
+.desc1 {
+    margin-top: 0.5em;
+    font-size: 1vw;
+    font-family: DejaVu Sans Mono, monospace;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.u {
+    margin-top: 1vw;
+    font-size: 1.3vw;
+}
+    
+.all {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 75%;
+}
+
+.box-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1.3em;
+    background-color: rgba(249, 255, 255, 0.849);
+    border-radius: 25px;
+    border: 1.7px solid #a3c6cc;
+    box-shadow: inset 0px -5px 5px -5px #7cbdc5, 0px 0px 5px 0px #dfe7e5;
+    padding: 3vw;
+}
+
+.inner {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: center;
+    width: 90%;
+}
+
+.gallery-img {
+    width: fit-content;
+    height: 20vw;
+   /*** background-image:  linear-gradient(to top, #f6ffe0ee 0%, hsla(216, 100%, 86%, 0.932) 100%);***/
+    border-radius: 30px;
+   
+}
+
+.move1, .move2, .move3, .move4, .move5, .move6, .move7, .move8 {
+    background: linear-gradient(to top, rgba(129, 226, 255, 0.4) 0%, rgb(195, 240, 236) 25%, rgb(198, 240, 241) 50%, rgb(204, 252, 250) 75%, rgba(249, 255, 255, 0.685) 100%);
+    width: auto;
+    border-radius: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 3px 0px rgb(162, 200, 207), 0px -4px 4px -3px #abf5ff, 0px 5px 1px -3px #cde9e5;
+    min-width: 0;
+    min-height: 0;
+}
+
+/***
+.move1 {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.move2 {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.move3 {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.move4 {
+    grid-row: 4;
+    grid-column: 2;
+}
+
+.move5 {
+    grid-row: 5;
+    grid-column: 1;
+}
+
+.move6 {
+    grid-row: 6;
+    grid-column: 2;
+}
+
+.move7 {
+    grid-row: 7;
+    grid-column: 1;
+}
+
+.move8 {
+    grid-row: 8;
+    grid-column: 2;
+}
+    ***/
+
+#img1, #img2, #img3, #img5, #img6, #img7, #img8 {
+    /**filter: drop-shadow(0.3vw 0.3vw 0px  #44a88a);**/
+}
+
+#img1 {
+    transform: rotate(-10deg);
+    width: 14vw;
+    height: fit-content;
+}
+
+#img2 {
+    transform: rotate(5deg);
+    width: 14vw;
+    height: auto;
+}
+
+#img3 {
+    width: 14vw;
+    height: auto;
+}
+
+#img6, #img7 {
+    width: 15vw;
+    height: fit-content;
+}
+
+#img6 {
+    transform: rotate(-10deg);
+}
+
+#img7 {
+    transform: rotate(4deg);
+}
+
+#img8 {
+   width: 15vw;
+   height: auto;
+}
+
+#img5 {
+    width: 13vw;
+    height: auto;
+}
+
+@media screen and (max-width: 600px) {
+body {
+   background-color: rgb(249, 253, 253);
+   background-image: none;
+}
+
+h1 {
+    box-shadow: none;
+    border: none;
+}
+
+.all {
+    width: 100%;
+}
+
+.move1, .move2, .move3, .move4, .move5, .move6, .move7, .move8 { 
+    background-image: none;
+    min-width: 70vw;
+    box-shadow: none;
+}
+
+#img1, #img2, #img3, #img5, #img6, #img7, #img8 {
+    width: 65vw;
+    filter: none;
+}
+
+.inner {
+    flex-direction: column;
+}
+
+.u {
+    font-size: 4vw;
+}
+
+.desc {
+    border-radius: 0;
+    width: 50vw;
+    height: fit-content;
+    background-color: transparent;
+}
+
+.desc1 {
+    font-size: 4vw;
+}
+
+  .all {
+    background-color: rgb(240, 248, 255);
+  }
+
+  .box-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+
+
+  h1 {
+    font-size: 5.4vw;
+    margin: 0 auto;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    background-color: transparent;
+  }
+
+  .gallery-img {
+    width: fit-content;
+  }
+
+  h3 {
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+    font-size: 4vw;
+  }
+  
+}
+
+  </style>
+
+  <body>
+    <div class="all">
+        <div class="title"><h1>MISC</h1></div>
+        <h3>Things that I cherish !</h3>
+        <div class="box-col">
+                <div class="move1">
+            <div class="inner">
+                <img loading="lazy" class="gallery-img" alt="figure" id="img1" src="https://cheepfish.neocities.org/collection/MISCchilde.png">
+                <div class="desc">
+                    <div class="u">
+                    <u>Childe Plush</u>
+                    <div class="desc1">My friends gifted this to me LMAOO it's based off of a really shitty drawing I made of Childe</div></div>
+                </div>
+            </div>
+                </div>
+                <div class="move2">
+            <div class="inner">
+                <img loading="lazy" class="gallery-img" alt="figure" id="img2" src="https://cheepfish.neocities.org/collection/MISCfishplu.png">
+                <div class="desc">
+                    <div class="u">
+                    <u>Fish Plush</u>
+                    <div class="desc1">Friend made this and gifted it to me as a birthday gift. Very charming guy</div></div>
+                </div>
+            </div>
+                </div>
+                <div class="move3">
+            <div class="inner">
+                <img loading="lazy" class="gallery-img" alt="figure" id="img3" src="https://cheepfish.neocities.org/collection/MISCmudkip.png">
+                <div class="desc">
+                    <div class="u">
+                    <u>Mudkip Plush</u>
+                    <div class="desc1">Anotha fish....</div></div>
+                </div>
+            </div>
+                </div>
+                    <div class="move5">
+            <div class="inner">
+                <img loading="lazy" class="gallery-img" alt="figure" id="img5" src="https://cheepfish.neocities.org/collection/MISCpokemoncard.png">
+                <div class="desc">
+                    <div class="u">
+                    <u>Pokemon Card</u>
+                    <div class="desc1">I just like the art on this one..I don't really collect em but they are fun to look at occasionally</div></div>
+                </div>
+            </div>
+                </div>
+                    <div class="move6">
+            <div class="inner">
+                <img loading="lazy" class="gallery-img" alt="figure" id="img6" src="https://cheepfish.neocities.org/collection/MISCzhongli.png">
+                <div class="desc">
+                    <div class="u">
+                    <u>Zhongli Plush</u>
+                    <div class="desc1">Friend gifted me this! He's supposed to have shoes but they fell off so now he looks kinda naked</div></div>
+                </div>
+            </div>
+                </div>
+                    <div class="move7">
+            <div class="inner">
+                <img loading="lazy" class="gallery-img" alt="figure" id="img7" src="https://cheepfish.neocities.org/collection/MISCipod.png">
+                <div class="desc">
+                    <div class="u">
+                    <u>Ipod Nano</u>
+                    <div class="desc1">I used to have a blue one, but I lost it years ago :(</div></div>
+                </div>
+            </div>
+                </div>
+                    <div class="move8">
+            <div class="inner">
+                <img loading="lazy" class="gallery-img" alt="figure" id="img8" src="https://cheepfish.neocities.org/collection/MISC3ds.png">
+                <div class="desc">
+                    <div class="u">
+                    <u>Modded 3ds</u>
+                    <div class="desc1">This thing has been through the trenches...cartridge slot doesn't even work anymore</div></div>
+                </div>
+            </div>
+                </div>
+        </div>
+    </div>
+
+  </body>
