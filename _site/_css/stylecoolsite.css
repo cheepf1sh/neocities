@@ -198,21 +198,21 @@ img#fish1.button, img#fish9.button, img#fish21.button {
     margin-left: 10px;
 }
 
-img#fish2.button, img#fish3.button, img#fish4.button, img#fish7.button, img#fish16.button, img#fish18.button, img#fish20.button, img#fish23.button {
+img#fish2.button, img#fish3.button, img#fish4.button, img#fish7.button, img#fish16.button, img#fish18.button, img#fish20.button, img#fish23.button, img#fish32.button, img#fish38.button, img#fish40.button, img#fish42.button {
     width: 115%;
 }
 
-img#fish5.button, img#fish15.button {
+img#fish5.button, img#fish15.button, img#fish29.button {
     width: 124%;
     margin-left: -12px;
 }
 
-img#fish6.button {
+img#fish6.button, img#fish28.button {
     width: 100%;
     margin-left: 17px;
 }
 
-img#fish10.button, img#fish22.button, img#fish25.button, img#fish26.button {
+img#fish10.button, img#fish22.button, img#fish25.button, img#fish26.button, img#fish30.button, img#fish31.button {
     width: 114%;
 }
 
@@ -221,7 +221,7 @@ img#fish14.button, img#fish17.button {
     margin-left: 15px;
 }
 
-img#fish19.button, img#fish24.button {
+img#fish19.button, img#fish24.button, img#fish34.button {
     width: 115%;
     margin-left: 4px;
 }
@@ -231,21 +231,26 @@ img#fish27.button {
     margin-left: 14px;
 }
 
+img#fish33.button {
+    width: 125%;
+    margin-left: -13px;
+}
+
 /***** BUTTON ADJ *****/
 
-img#fish1.agh, img#fish2.agh {
+img#fish1.agh, img#fish2.agh, img#fish31.agh, img#fish39.agh {
     margin-left: 24px;
 }
 
-img#fish3.agh, img#fish5.agh, img#fish26.agh {
+img#fish3.agh, img#fish5.agh, img#fish26.agh, img#fish35.agh, img#fish37.agh {
     margin-left: 30px;
 }
 
-img#fish4.agh, img#fish6.agh, img#fish20.agh {
+img#fish4.agh, img#fish6.agh, img#fish20.agh, img#fish34.agh {
     margin-left: 50px;
 }
 
-img#fish7.agh, img#fish19.agh {
+img#fish7.agh, img#fish19.agh, img#fish30.agh, img#fish32.agh, img#fish42.agh {
     margin-left: 47px;
 }
 
@@ -254,7 +259,7 @@ img#fish9.agh {
     width: 65px;
 }
 
-img#fish10.agh, img#fish22.agh {
+img#fish10.agh, img#fish22.agh, img#fish33.agh, img#fish38.agh, img#fish40.agh {
     margin-left: 38px;
 }
 
@@ -313,7 +318,17 @@ img#fish27.agh {
     width: 65px;
 }
 
-/***** ANIMATION *****/
+img#fish28.agh, img#fish29.agh  {
+    margin-left: 51px;
+    margin-top: 13px;
+}
+
+img#fish36.agh {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/***** ANIMATION 
 
  .press {
       -webkit-transition: all 0.8s ease;
@@ -325,8 +340,9 @@ img#fish27.agh {
       transform: scale(1.2);
     }
 
+    *****/
 
-#fish1, #fish3, .buttonbg, .buttongif, .currentlyfish, #fish6, #fish8, #fish11, #fish15, #fish19, #fish21, #fish24 {
+#fish1, #fish3, .buttonbg, .buttongif, .currentlyfish, #fish6, #fish8, #fish11, #fish15, #fish19, #fish21, #fish24, #fish28, #fish31, #fish35, #fish37, #fish40 {
 animation-name: float1; 
 animation-duration: 4s; 
 animation-iteration-count: infinite; 
@@ -347,7 +363,7 @@ transform: translate(0, -0px);
 } 
 }     
 
-#fish2, #fish7, #fish9, #fish12, #fish14, #fish17, #fish20, #fish22, #fish25, #fish27 {
+#fish2, #fish7, #fish9, #fish12, #fish14, #fish17, #fish20, #fish22, #fish25, #fish27, #fish29, #fish32, #fish34, #fish36, #fish38, #fish41 {
 animation-name: float2; 
 animation-duration: 3s; 
 animation-iteration-count: infinite; 
@@ -368,7 +384,7 @@ transform: translate(0, -0px);
 } 
 }  
 
-#fish4, #fish5, #fish10, #fish13, #fish16, #fish18, #fish23, #fish26 {
+#fish4, #fish5, #fish10, #fish13, #fish16, #fish18, #fish23, #fish26, #fish30, #fish33, #fish39, #fish42 {
 animation-name: float3; 
 animation-duration: 4s; 
 animation-iteration-count: infinite; 
