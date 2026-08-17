@@ -48,3 +48,12 @@
     src: url("https://cheepfish.neocities.org/_fonts/TimesNewRomanceBold.otf") format("opentype");
 }
 
+@font-face {
+    font-family: "genshin";
+    src: url("https://cheepfish.neocities.org/_fonts/genshin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Pixelout";
+    src: url("https://cheepfish.neocities.org/_fonts/Pixelout.ttf") format("truetype");
+}
