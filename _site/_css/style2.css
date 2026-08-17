@@ -1184,13 +1184,31 @@ from { top: 0; } to { top: 210px; }
     align-items: center;
 }
 
+#statuscafe {
+    padding: .5em;
+    background-color: hsl(192, 100%, 97%);
+    max-height: 73px;
+    max-width: 200px;
+    overflow-y: auto;
+    position: absolute;
+    margin-bottom: 12px;
+    margin-left: -10px;
+    z-index: 200;
+}
+#statuscafe-username {
+    margin-bottom: .2em;
+}
+#statuscafe-content {
+    padding: 5px 5px 0 5px;
+    
+}
+
 .currentlytext {
     grid-area: 1 / 1;
     position: relative;
     width: 280px;
-    margin-bottom: -20px;
     margin-left: -50px;
-
+    margin-bottom: -20px;
 }
 
 .currentlyfish {
