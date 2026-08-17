@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cheepfish.neocities.org/png/icon4tab.png">
+    <title>gone fishin'</title>
+    <link href="_css/stylefont.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+
+  <style>
+    body {
+        background-image: url(https://cheepfish.neocities.org/shrine/SHRINEbg4.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    main {
+        width: 60%;
+        margin: auto;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 6vw;
+        font-family: "Pixelout";
+        color: rgb(4, 5, 43);
+        background: linear-gradient(to top, #59ffff, #b1ff58,#e5ff51, #ffffe2);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        padding-top: 1.6vw;
+        border-radius: 50px;
+        width: 50vw;
+        margin: auto;
+        margin-top: 1.5vw;
+        margin-bottom: 3vw;
+        filter: drop-shadow(0.7vw 0.7vw rgb(11, 40, 43));
+    }
+
+    h2 {
+        text-align: center;
+        font-family: "pixel";
+        color: aliceblue;
+        font-size: 1.1vw;
+        margin-top: 2vw;
+        border-radius: 45px;
+    }
+
+    .shrines {
+        display: flex;
+        gap: 7vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .both img {
+        width: 10vw;
+    }
+    
+    .back {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        background-color: aliceblue;
+        border-radius: 150px;
+        width: 12vw;
+        height: 12vw;
+        position: relative;
+    }
+
+    .back:hover {
+        background-color: #dbff0c;
+    }
+
+    .back img:hover {
+        filter: drop-shadow(0.5vw 0.5vw rgb(18, 179, 152));
+    }
+
+    .spiderman, .splatoon, .nin {
+        filter: grayscale(100%);
+        
+    }
+    
+    .cross {
+        text-decoration: line-through;
+    }
+
+    @media screen and (max-width: 600px) {
+  .shrines {
+    flex-direction: column;
+    gap: 4vw;
+  }
+
+  h1 {
+    font-size: 100%;
+  }
+  
+}
+
+
+  </style>
+
+  <body>
+    <main>
+        <div class="title">
+            <h1>S H R I N E S</h1>
+        </div>
+        <div class="shrines">
+            <div class="both">
+                <a href="SHRINEgenshinimpact.html">
+                    <div class="back"><img loading="lazy" class="genshin" src="https://cheepfish.neocities.org/shrine/SHRINEgenshin.gif"></div></a>
+                    <h2>Genshin Impact</h2>
+            </div>
+               
+            <div class="both">
+                <a href="404.html">
+                    <div class="back"><img loading="lazy" class="spiderman" src="https://cheepfish.neocities.org/shrine/SHRINEspiderman.gif"></div></a>
+                    <h2 class="cross">Spiderman</h2>
+            </div>
+
+            <div class="both">
+                <a href="404.html">
+                    <div class="back"><img loading="lazy" class="splatoon" src="https://cheepfish.neocities.org/shrine/SHRINEsplatoon.gif"></div></a>
+                    <h2 class="cross">Splatoon</h2>
+            </div>
+
+            <div class="both">
+                <a href="404.html">
+                    <div class="back"><img loading="lazy" class="nin" src="https://cheepfish.neocities.org/shrine/SHRINEnin.gif"></div></a>
+                    <h2 class="cross">Nine Inch Nails</h2>
+            </div>
+        </div>
+    </main>
+  </body>
