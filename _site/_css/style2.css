@@ -815,6 +815,10 @@ transform: translate(0, -0px);
 } 
 }
 
+#fish4, #fish5, #fish6, #fish10 {
+    filter: grayscale(100%)
+}
+
 .guestbook {
     margin-top: 667px;
     margin-left: 340px;
