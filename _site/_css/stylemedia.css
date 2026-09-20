@@ -1,0 +1,380 @@
+body {
+   background-image: url(https://cheepfish.neocities.org/medialog/mediabg3.jpg);
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+.container {
+    display: flex;
+    gap: 1em;
+    background-color: #7d95ff;
+    background-image: url(https://cheepfish.neocities.org/medialog/mediabg9.png);
+    padding: 1em;
+    border: 1px groove rgb(235, 255, 147);
+}
+
+aside {
+    background-image: url(https://cheepfish.neocities.org/medialog/mediabg8.png);
+    background-color: #eef2ff;
+    box-shadow: 5px 5px 0px 2px rgba(36, 24, 145, 0.486);
+    display: flex;
+    flex-direction: column;
+}
+
+.fav {
+    background-image: url(https://cheepfish.neocities.org/medialog/mediabg8.png);
+    background-color: #eef2ff;
+    box-shadow: 5px 5px 0px 2px rgba(36, 24, 145, 0.486);
+    padding: 0 0 1em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 20%;
+    
+}
+
+img.fish {
+    width: 70%;
+}
+
+.fishc {
+    display: flex;
+    justify-content: center;
+}
+
+.topleft {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.desc {
+    grid-column: 1 / span 2;
+}
+
+.filter {
+    background-color: #4336b4;
+}
+
+/**MEDIA**/
+
+.mediac {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 120em;
+    /*background-image: linear-gradient(to bottom, rgb(78, 90, 255), rgb(238, 255, 142));*/
+}
+
+.filterDiv {
+    background-image: url(https://cheepfish.neocities.org/medialog/mediabg7.png);
+    background-color: #eef2ff;
+    display: none;
+   
+    width: 100%;
+}
+
+.show {
+    display: block;
+}
+
+.inside {
+    display: flex;
+    width: 100%;
+    box-shadow: 5px 5px 0px 2px rgba(36, 24, 145, 0.486);
+    box-sizing: border-box;
+}
+
+
+figure img {
+    width: 5em;
+    height: 7em;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+article {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    padding-bottom: 0.7em;
+}
+
+
+
+/**BUTTON**/
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+    background-image: url(https://cheepfish.neocities.org/medialog/mediabg8.png);
+    background-color: #eef2ff;
+    padding: 0 0 1em 0;
+    box-shadow: 5px 5px 0px 2px rgba(36, 24, 145, 0.486);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin-left: 0.5em;
+    margin-bottom: 0.2em;
+}
+
+.btn {
+    border: none;
+    background-color: #ecffa8;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ecffa8;
+}
+
+.btn.active {
+  background-color: #2f21fa;
+  color: rgb(255, 255, 255);
+}
+
+.tags {
+    display: flex;
+    margin-left: 2em;
+    margin-right: 1em;
+    gap: 1em;
+    min-width: none;
+    grid-row: 1;
+    grid-column: 2;
+    
+}
+
+#myBtnContainer {
+    padding: 0.7em 0.2em 0 0.2em;
+}
+
+a.homebtn {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+}
+
+/**TEXT**/
+
+p.f {
+    padding: 0.2em 0.9em 0.2em 0.9em;
+}
+
+h1 {
+    font-family: "grape";
+    text-align: center;
+    font-size: 3vw;
+    margin: 0.3em 0 0.2em 0;
+    color:  #4336b4;
+    padding: 0 0.2em 0 0.2em;
+}
+
+h2 {
+    margin-bottom: 0.3em;
+    font-family: "pixel";
+    font-size: 1.4em;
+    color: #4336b4;
+}
+
+h3 {
+    font-family: DejaVu Sans Mono, monospace;
+    font-size: 0.9em;
+    background-color: rgb(142, 159, 255);
+    padding: 0.4em;
+    border-radius: 8em;
+    margin-bottom: 0;
+    margin-top: 1.1em;
+    font-weight: normal;
+    height: fit-content;
+}
+
+h4 {
+    font-family: "pixel";  
+    color: #ecffa8;
+    text-align: center;
+    margin: 0.7em 0 0.7em 0;
+    padding: 0 1em 0 1em;
+}
+
+p {
+    margin: 0.2em 0 0.2em 0;
+    font-family: DejaVu Sans Mono, monospace;
+    font-size: 0.9em;
+    padding: 0 0.8em 0 0;
+}
+
+p.l {
+    margin: 0 1em 0 1em;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    background-color: #ecffa8;
+    border-radius: 2em;
+}
+
+.rat {
+    display: flex;
+    gap: 0.4em;
+}
+
+/**COLLAPSE**/
+
+.collapsible {
+  background-color: #b93a56;
+  color: #ffffff;
+  cursor: pointer;
+  width: 9em;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin: 0.5em 0 0 0;
+  padding: 0.2em 0 0.2em 1.3em;
+}
+
+
+
+.content {
+  display: none;
+  overflow: hidden;
+  margin-top: 0.3em;
+  padding-right: 0.5em;
+}
+
+.collapsible:after {
+  content: '\002B'; 
+  font-size: 15px;
+  margin-top: 0.15em;
+}
+
+.collapsible.active:after {
+  content: "\2212";
+}
+
+button.collapsible {
+    display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+    p, h3 {
+        font-size: 0.7em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .left {
+        width: 50%;
+    }
+
+    .btn {
+        font-size: 0.7em;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: #7d95ff;
+        background-image: none;
+    }
+
+    article {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    padding-bottom: 1em;
+    width: 480px;
+    }
+
+    .container {
+        flex-direction: column;
+        background-image: none;
+        background-color: transparent;
+        border: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left {
+        width: 100%;
+        gap: 0;
+    }
+    
+    aside {
+        background: none;
+        box-shadow: none;
+    }
+
+    p.l, .fishc, .fav, figure {
+        display: none;
+    }
+
+    h1 {
+        font-size: 13vw;
+        margin-top: 0;
+        color: #ecffa8;
+    }
+
+    h2, p {
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 0.6em;
+        background-color: rgb(142, 159, 255);
+        padding: 0.3em;
+    }
+
+    .title {
+        grid-column: 1 / span 2;
+
+    }
+
+    .mediac {
+        width: 100%;
+    }
+
+    .inside {
+        padding: 0 1em 0 1em;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tags, h3 {
+        margin: 0;
+    }
+
+    .tags {
+        padding-top: 0.2em;
+        grid-row: 3;
+        grid-column: 1 / span 2;
+    }
+
+    .rat {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .collapsible {
+        width: 6em;
+    
+    }
+
+    button.collapsible {
+        margin: 0 auto;
+        margin-top: 0.3em;
+    }
+
+}
