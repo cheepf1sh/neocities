@@ -815,7 +815,7 @@ transform: translate(0, -0px);
 } 
 }
 
-#fish4, #fish5, #fish6, #fish10 {
+#fish4, #fish5, #fish10 {
     filter: grayscale(100%)
 }
 
@@ -1197,7 +1197,7 @@ from { top: 0; } to { top: 210px; }
     position: absolute;
     margin-bottom: 12px;
     margin-left: -10px;
-    z-index: 200;
+    z-index: 300;
 }
 #statuscafe-username {
     margin-bottom: .2em;
