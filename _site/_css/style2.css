@@ -1213,6 +1213,7 @@ from { top: 0; } to { top: 210px; }
     width: 280px;
     margin-left: -50px;
     margin-bottom: -20px;
+	z-index: 100;
 }
 
 .currentlyfish {
