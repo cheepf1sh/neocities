@@ -1,0 +1,91 @@
+body {
+   background-image:url(https://cheepfish.neocities.org/shrine/genshin/GENSHINbg1.jpg); 
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 38%;
+    
+}
+
+.logo img {
+    filter: drop-shadow(5px 5px 0px #f59c69);
+}
+
+.book {
+    width: 55%;
+    display: flex;
+    position: relative;
+    margin-top: -1.5vw;
+}
+
+.book img, .logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.iborder {
+    position: absolute;
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    min-height: 0;  
+}
+
+.inner {
+    margin-left: 2.6vw;
+    margin-top: 3.5vw;
+    height: 80%;
+}
+
+iframe {
+   width: 100%;
+   max-width: 97%;
+   height: 100%;
+   max-height: 100%;
+   border: none;
+   overflow-y: hidden;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: fit-content;
+    margin-top: 2vw;
+}
+
+nav ul {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(182, 178, 144);
+}
+
+li {
+    font-family: "genshin";
+    font-size: 0.83vw;
+    background-color: aliceblue;
+    border: 1px solid rgb(182, 178, 144);
+    margin-bottom: 0.7vw;
+    padding: 0.4vw;
+    width: 5.7vw;
+    list-style: none;
+}
+
+.bottom {
+   margin-bottom: 3.2vw;
+}
