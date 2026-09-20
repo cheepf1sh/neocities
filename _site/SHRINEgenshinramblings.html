@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cheepfish.neocities.org/png/icon4tab.png">
+    <title>gone fishin'</title>
+    <link href="_css/stylefont.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+
+  <style>
+    body {
+        overflow-x: hidden;
+    }
+    main {
+        display: flex;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        height: 54.8vw;
+        overflow-y: auto;
+        overflow-x: hidden;
+        background-color: rgb(255, 253, 249);
+        border-radius: 30px;
+        padding: 1vw;
+        position: fixed;
+    }
+
+    h2 {
+        font-size: 3.5vw;
+        text-align: center;
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        font-family: "genshin";
+        margin-top: 0;
+        margin-bottom: 1.5vw;
+        background-color: rgb(255, 228, 168);
+        border-radius: 30px;
+        padding: 1.2vw 0 1.2vw 0;
+    }
+
+    h3 {
+        font-family: "genshin";
+        text-align: center;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+    }
+
+    .why {
+        width: 75%;
+        height: 53vw;
+        background-color: rgb(255, 253, 249);
+        border-radius: 20px;
+        overflow-wrap: break-word;
+        overflow-y: auto;
+        margin-left: 25vw;
+        padding: 1.8vw;
+    }
+
+    p {
+        margin: 0;
+        font-family: "genshin";
+        font-size: 1.4vw;
+        text-indent: 2.7vw;
+    }
+
+    p.e {
+        text-indent: 0;
+    }
+
+    iframe {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        max-height: 100%;
+        border: none;
+    }
+
+    .inner {
+        height: 100%;
+    }
+
+    .button1 {
+        font-family: "genshin";
+        background-color: transparent;
+        border: transparent;
+    }
+
+    .button1 img {
+        width: 10vw;
+    }
+
+    .button {
+        width: 90%;
+        height: 6vw;
+        margin: 0 auto;
+        font-family: "genshin";
+        border: transparent;
+        border-radius: 20px;
+        background-color: rgb(227, 239, 255);
+        font-size: 1.5vw;
+    }
+
+    .button:hover {
+        background-color: rgb(38, 42, 44);
+        color: aliceblue;
+    }
+
+    .land {
+        width: 20%;
+    }
+
+    img.image {
+        width: 80%;
+        display: block;
+        margin: auto;
+        margin-bottom: 2vw;
+    }
+
+    img.image1 {
+        width: 50%;
+        display: block;
+        margin: auto;
+        margin-bottom: 2vw;
+    }
+
+    p.center {
+        text-align: center;
+    }
+
+
+
+  </style>
+
+   <body>
+    <main>
+        <div class="menu">
+                <div class="nav">
+                    <button class="button1" onclick="openTab('Ramblings')"><img loading="lazy" class="land" src="https://cheepfish.neocities.org/shrine/genshin/genshinemote10.png" onmouseover="this.src='https://cheepfish.neocities.org/shrine/genshin/genshinemote11.png'" onmouseout="this.src='https://cheepfish.neocities.org/shrine/genshin/genshinemote10.png'"></button>
+                    <button class="button" onclick="openTab('Liyue')">Liyue Archon Quest</button>
+                    <button class="button" onclick="openTab('Sumeru')">Sumeru Archon Quest</button>
+                    <button class="button" onclick="openTab('Fontaine')">Fontaine Archon Quest</button>
+                    <button class="button" onclick="openTab('Natlan')">Natlan Archon Quest</button>
+                    <button class="button" onclick="openTab('NodKrai')">Nod Krai Archon Quest</button>
+                </div>
+                
+             
+            </div>
+        <div class="why">
+            <div id="Ramblings" class="tab">
+                <h2>500 Coke Rants</h2>
+                    <p class="center">Where I dump all my thoughts about this shart game...a lot of it probably won't make sense because I'm typing this through stream of consciousness, but who gaf I'm just here to log all my foolish opinions</p> </br>
+                    <img loading="lazy" class="image" src="https://cheepfish.neocities.org/shrine/genshin/GENSHINimg1.png">
+            </div>
+
+            <div id="Liyue" class="tab" style="display:none">
+                <h2>Liyue Archon Quest</h2>
+                    <p class="center">I'm gonna be honest I don't remember jack shit about this quest it's been like what. 5 years? Childe is in it though so 10/10 no notes</p> </br>
+                    <img loading="lazy" class="image" src="https://cheepfish.neocities.org/shrine/genshin/GENSHINchildeliyue.JPG">
+                    <p class="center">How this whole quest felt like 2 me</p>
+            </div>
+
+            <div id="Sumeru" class="tab" style="display:none">
+                <h2>Sumeru Archon Quest</h2>
+                    <p class="center">My favorite quest, no write-up yet but I am its biggest glazer</p> </br>
+                    <img loading="lazy" class="image" src="https://cheepfish.neocities.org/shrine/genshin/GENSHINsumeru1.jpg">
+                    <p class="center">A favorite of mine...he's kinda really cringe, but I find it amusing</p>
+            </div>
+
+            <div id="Fontaine" class="tab" style="display:none">
+                <h2>Fontaine Archon Quest</h2>
+                    <p class="center">Will do a write-up for this eventuallyyyyy I did like the last few acts but the beginning felt like torture lowkey</p> </br>
+                    <img loading="lazy" class="image" src="https://cheepfish.neocities.org/shrine/genshin/GENSHINchildetrial.jpg">
+            </div>
+
+            <div id="Natlan" class="tab" style="display:none">
+                <h2>Natlan Archon Quest</h2>
+                <h3>Spectacle Over Storytelling</h3>
+                    <p class="e">I HAVE A MFING BONE TO PICK WITH THIS QUESTLINE.</p> </br>
+                    <p>So much potential wasted...and for such a beautifully designed region too.  Natlan focuses a lot on the concept of unity, yet despite how much more involved the cast is in this quest does it ever truly feel as if any of them are connected. Part of the issue lies behind the fact that there is rarely, if any, kind of conflict at play. When the traveler first arrives to Natlan, the story immediately tries to convince the player that not only are we friends with all these people, but they are all best buds with one another. None of these characters ever really clash with each other, other than Citlali and Ororon, (which is probably why they are the more interesting characters out of the whole cast) so a lot of them lack any dimension that allows them to stand out from one another. I also would've loved to see some kind of dispute between tribes maybe regarding the whole 500-year war that's been going on...but I suppose when you're fighting for that long all grievances are just thrown out the window???????? I don't know man I've personally never been to war but I feel like having some sort of division would've made for a compelling story and would've reinforced those themes much more.</p> </br>
+                    <p>My other big issue is that there is no sense of urgency with their whole situation. Everyone constantly talks about the rise in attacks related to the Abyss, but treats it as if it's just another typical day in their lives. I don't think this is necessarily a bad way to approach a nation that's been stuck fighting the same war for several centuries, but it does become a problem when you are trying to create some big spectacle out of it. In Act 4, we are thrust into a battle against the Abyss and it is the first time we truly see the realities of this war. They did a good job at portraying the helplessness the Traveler felt when we were stuck on that fuckass balloon, but shortly after, the six heroes gather together to help Mavuika accumulate the strength to turn the tides against the abyssal forces. </p> </br>
+                    <img loading="lazy" class="image" src="https://cheepfish.neocities.org/shrine/genshin/GENSHINnatlan3.png">
+                    <p>Basically a power of friendship triumphs all moment, but because of how weak of an introduction the Abyss was given at the beginning of the quest, they only feel like a slight disturbance rather than a powerful threat. It also doesn't help that there wasn't any conflict between any of these characters, so their team-up did not feel like a huge, emotional moment either. What was meant to be a pivotal moment in the story, turned into a shallow attempt at creating a significant climax because there was fundamentally no setup. But hey, at least that garish display of a finale was the end!!! Just kidding there's another act🥀🥀🥀🥀🥀</p>
+                <h3>ACT 5 - Incredible Lore, Dogwater Execution</h3>
+                    <p>The quest starts off with a feast to help pump up the Traveler and Mavuika for their final battle against Gosoythoth. A bit redundant since they hold a banquet at the end of Act 4 as well, but at least we get to see a more playful side of Mavuika in this one. I just wish we had gotten to see that side of her earlier on because even with the cute little interactions she shares with her people, do we really get any kind of understanding on who she is as a person. This problem continues to grow increasingly worse once she descends into the Night Kingdom and tries to sacrifice herself in exchange for restoring the Ley Lines.</p> </br> 
+                    <p>Having such a major character die would've been a great segue into revealing her bottled-up feelings about the amount of sacrifice she had to make to finally end the war. Unfortunately, this game is too scared to ever explore any actual complexities with their characters because idk man maybe they just won't sell as well if they exhibit any shortcomings????? And listen, I don't think a character has to suffer from having some kind of weakness to be interesting, in fact Mavuika is a perfect example of this, because she is someone with inherently very few flaws. My issue stems from how the other characters around her react to her behavior. No one ever questions her, nor challenges her ideologies which makes NO SENSE considering the fact that she hides her plan to sacrifice herself from everyone. Not only does this eliminate any tension behind her supposedly "noble" sacrifice, but it also fails to demonstrate that any of these characters actually care about their archon. So much for unity I guess. In the end though it didn't really matter anyways because none of this actually happens? Hooray??</p>
+                <h3>CAPITANO - Potential Man</h3>
+                    <img loading="lazy" class="image" src="https://cheepfish.neocities.org/shrine/genshin/GENSHINnatlan1.jpg">
+                    <p>One of the coolest designs, if not my favorite out of the harbingers, AND THEY WASTED ITTTTTTTTT. Bro just arrived in Natlan to farm those hype moments and aura clips, but none of it is actually justified because there is no build-up to any of it??? The only time it did make sense was in his first fight with Mavuika because he disagreed with her methods to ending the war, thus attempting to take the Pyro Gnosis from her. However, his confrontation with Ronova felt so unearned because we get barely any information on his motivations or goals or who he is? He just decides to show up, infodump his traumatic past last minute, and die. I do think his final decision made sense, but the way they paced it out was so atrocious that by the time we arrive to the conclusion of his story, does it fall flat. I get that they wanted to keep that air of mystery around him, but it just didn't work for me personally because he is NOWHERE to be seen in this act up until this moment. If they had just given him more of a spotlight, would I have been more convinced that he wasn't just a cop out for Mavuika to stay alive... Maybe he'll somehow miraculously come back though and they can retcon his entire story hahahhaaha (I'm coping)</p> 
+                <h3>FINAL THOUGHTS</h3>
+                    <p>What Natlan's story struggles with throughout the entirety of it's runtime is gathering momentum to build an engaging narrative. Everything is played out way too safely with none of these characters ever having to make a real decision since there were never any consequences to them. Kachina wins the tournament with the power of friendship, Natlan triumphs against the Abyss with the power of friendship, Mavuika saves her nation by having some guy take her place as the sacrificial lamb....and with the power of friendship. The story grows stale when you are constantly having your characters win every fight - no struggle means no payoff to any of these story beats. If they weren't going to focus on the characters/plot, (which still kinda makes no sense given the themes lol) they should've just leaned all the way into making each fight as campy as possible imo. It would've helped give a clear idea of what kind of tone they were trying to convey because as it stands, there is no real prominent voice that expresses what kind of story this nation wanted to tell.</p> </br>
+                    <p class="e">TLDR This quest lowkey sucked the soul out of me so badly that I stopped playing the main story because of how boring it was LMAO...but at least there were some epic hype moments..but what is the point in having all that aura if there is nothing to farm💔💔💔💔</p> </br>
+                <img loading="lazy" class="image" src="https://cheepfish.neocities.org/shrine/genshin/GENSHINnatlan2.jpg">
+                <p class="center">Uhh anyways the one thing I did like about this quest was Citlali. I think she's really cute lol</p>
+                </div>
+
+            <div id="NodKrai" class="tab" style="display:none">
+                <h2>Nod Krai Archon Quest</h2>
+                    <p class="center">Have not played it yet I heard it's like 30 hours long though ough...but I must finish it so I can see my beautiful gamer gf in Snezhnaya</p> </br>
+                    <img loading="lazy" class="image1" src="https://cheepfish.neocities.org/shrine/genshin/GENSHINnodkrai1.png">
+            </div>
+            
+        </div>
+        </div>
+    </main>
+
+  </body>
+
+  <script>
+function openTab(tabName) {
+  var i;
+  var x = document.getElementsByClassName("tab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+
+  </script>
+
+  
