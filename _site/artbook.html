@@ -134,14 +134,25 @@ p {
         color: rgb(24, 18, 29);
     }
 
-@media screen and (max-width: 1024px) {
- 
+@media screen and (max-width: 1100px) {
+    #gallery-box {
+        MIN-width: 37em;
+    }
 }
 
 @media screen and (max-width: 600px) {
+    body {
+        background-image: none;
+        background-color: rgb(147, 204, 230);
+    }
+
+    #gallery-box {
+        min-width: 100%;
+    }
+
     .grid {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0.1fr 0.3fr;
+        grid-template-rows: 1fr 0.1fr auto;
         padding: 0;
     }
   
@@ -163,12 +174,20 @@ p {
     .extra {
         grid-column: 1;
         grid-row: 3;
+        padding-bottom: 1em;
     }
 
     img#other {
-        width: 70px;
-        height: 70px;
-        margin-bottom: 0.5em;
+        height: 30px;
+    }
+
+    .images {
+        height: 30px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: clamp(0.5rem, 5vw, 3rem);
     }
 
     p {
@@ -180,13 +199,18 @@ p {
   </style>  
 
   <body>
+    
+
+    
+
+    <!--MOBILE-->
 <div class="all">
     <div class="box">   
         <div class="title"><h1>ARTBOOKS</h1></div>
     <div id="gallery-box">
             <div class="grid">
                 <div class="cover">
-                    <a href="https://cheepfish.neocities.org/collection/ARTBOOKtintincover.jpg" data-lightbox="tintin"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKtintincover.jpg" id="coverimg"></a>
+                    <a href="https://cheepfish.neocities.org/collection/ARTBOOKtintincover.webp" data-lightbox="tintin"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKtintincover.webp" id="coverimg"></a>
                 </div>
                 <div class="description">
                     <p><b>Tintin: Herge's Masterpiece</b></p>
@@ -194,16 +218,16 @@ p {
                 <div class="extra">
                     <div class="favpage"><p><b>Pages I Like</b></p></div>
                     <div class="images">
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKtintin1.jpg" data-lightbox="tintin"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKtintin1.jpg" id="other"></a>
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKtintin22.jpg" data-lightbox="tintin"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKtintin22.jpg" id="other"></a>
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKtintin3.jpg" data-lightbox="tintin"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKtintin3.jpg" id="other"></a>
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKtintin4.jpg" data-lightbox="tintin"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKtintin4.jpg" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKtintin1.webp" data-lightbox="tintin"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKtintin1.webp" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKtintin22.webp" data-lightbox="tintin"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKtintin22.webp" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKtintin3.webp" data-lightbox="tintin"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKtintin3.webp" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKtintin4.webp" data-lightbox="tintin"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKtintin4.webp" id="other"></a>
                     </div>
                 </div>
             </div>
             <div class="grid">
                 <div class="cover">
-                    <a href="https://cheepfish.neocities.org/collection/ARTBOOKkikicover.jpg" data-lightbox="kiki"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKkikicover.jpg" id="coverimg"></a>
+                    <a href="https://cheepfish.neocities.org/collection/ARTBOOKkikicover.webp" data-lightbox="kiki"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKkikicover.webp" id="coverimg"></a>
                 </div>
                 <div class="description">
                     <p><b>The Art of Kiki's Delivery Service</b></p>
@@ -211,14 +235,14 @@ p {
                 <div class="extra">
                     <div class="favpage"><p><b>Pages I Like</b></p></div>
                 <div class="images">
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKkiki1.jpg" data-lightbox="kiki"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKkiki1.jpg" id="other"></a>
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKkiki2.jpg" data-lightbox="kiki"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKkiki2.jpg" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKkiki1.webp" data-lightbox="kiki"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKkiki1.webp" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKkiki2.webp" data-lightbox="kiki"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKkiki2.webp" id="other"></a>
                     </div>
                 </div>
             </div>
             <div class="grid">
                 <div class="cover">
-                    <a href="https://cheepfish.neocities.org/collection/ARTBOOKbravelydefaultcover.jpg" data-lightbox="bravely"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKbravelydefaultcover.jpg" id="coverimg"></a>
+                    <a href="https://cheepfish.neocities.org/collection/ARTBOOKbravelydefaultcover.webp" data-lightbox="bravely"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKbravelydefaultcover.webp" id="coverimg"></a>
                 </div>
                 <div class="description">
                     <p><b>The Art of BRAVELY SECOND: END LAYER</b></p>
@@ -226,15 +250,15 @@ p {
                 <div class="extra">
                     <div class="favpage"><p><b>Pages I Like</b></p></div>
                 <div class="images">
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKbravelydefault1.jpg" data-lightbox="bravely"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKbravelydefault1.jpg" id="other"></a>
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKbravelydefault2.jpg" data-lightbox="bravely"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKbravelydefault2.jpg" id="other"></a>
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKbravelydefault3.jpg" data-lightbox="bravely"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKbravelydefault3.jpg" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKbravelydefault1.webp" data-lightbox="bravely"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKbravelydefault1.webp" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKbravelydefault2.webp" data-lightbox="bravely"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKbravelydefault2.webp" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKbravelydefault3.webp" data-lightbox="bravely"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKbravelydefault3.webp" id="other"></a>
                     </div>
                 </div>
             </div>
             <div class="grid">
                 <div class="cover">
-                    <a href="https://cheepfish.neocities.org/collection/ARTBOOKmothercover.jpg" data-lightbox="mother"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKmothercover.jpg" id="coverimg"></a>
+                    <a href="https://cheepfish.neocities.org/collection/ARTBOOKmothercover.webp" data-lightbox="mother"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKmothercover.webp" id="coverimg"></a>
                 </div>
                 <div class="description">
                     <p><b>The Secret of MOTHER 2</b></p>
@@ -242,16 +266,16 @@ p {
                 <div class="extra">
                     <div class="favpage"><p><b>Pages I Like</b></p></div>
                 <div class="images">
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKmother1.jpg" data-lightbox="mother"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKmother1.jpg" id="other"></a>
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKmother2.jpg" data-lightbox="mother"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKmother2.jpg" id="other"></a>
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKmother3.jpg" data-lightbox="mother"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKmother3.jpg" id="other"></a>
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKmother4.jpg" data-lightbox="mother"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKmother4.jpg" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKmother1.webp" data-lightbox="mother"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKmother1.webp" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKmother2.webp" data-lightbox="mother"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKmother2.webp" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKmother3.webp" data-lightbox="mother"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKmother3.webp" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKmother4.webp" data-lightbox="mother"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKmother4.webp" id="other"></a>
                     </div>
                 </div>
             </div>
             <div class="grid">
                 <div class="cover">
-                    <a href="https://cheepfish.neocities.org/collection/ARTBOOKcrkcover.jpg" data-lightbox="crk"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKcrkcover.jpg" id="coverimg"></a>
+                    <a href="https://cheepfish.neocities.org/collection/ARTBOOKcrkcover.webp" data-lightbox="crk"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKcrkcover.webp" id="coverimg"></a>
                 </div>
                 <div class="description">
                     <p><b>The Art Of COOKIE RUN KINGDOM</b></p>
@@ -259,15 +283,15 @@ p {
                 <div class="extra">
                     <div class="favpage"><p><b>Pages I Like</b></p></div>
                 <div class="images">
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKcrk1.jpg" data-lightbox="crk"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKcrk1.jpg" id="other"></a>
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKcrk2.jpg" data-lightbox="crk"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKcrk2.jpg" id="other"></a>
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKcrk3.jpg" data-lightbox="crk"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKcrk3.jpg" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKcrk1.webp" data-lightbox="crk"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKcrk1.webp" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKcrk2.webp" data-lightbox="crk"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKcrk2.webp" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKcrk3.webp" data-lightbox="crk"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKcrk3.webp" id="other"></a>
                     </div>
                 </div>
             </div>
             <div class="grid">
                 <div class="cover">
-                    <a href="https://cheepfish.neocities.org/collection/ARTBOOKhaikyucover.jpg" data-lightbox="haikyu"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKhaikyucover.jpg" id="coverimg"></a>
+                    <a href="https://cheepfish.neocities.org/collection/ARTBOOKhaikyucover.webp" data-lightbox="haikyu"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKhaikyucover.webp" id="coverimg"></a>
                 </div>
                 <div class="description">
                     <p><b>The Art of HAIKYU!!</b></p>
@@ -275,16 +299,16 @@ p {
                 <div class="extra">
                     <div class="favpage"><p><b>Pages I Like</b></p></div>
                 <div class="images">
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKhaikyu1.jpg" data-lightbox="haikyu"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKhaikyu1.jpg" id="other"></a>
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKhaikyu2.jpg" data-lightbox="haikyu"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKhaikyu2.jpg" id="other"></a>
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKhaikyu3.jpg" data-lightbox="haikyu"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKhaikyu3.jpg" id="other"></a>
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKhaikyu4.jpg" data-lightbox="haikyu"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKhaikyu4.jpg" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKhaikyu1.webp" data-lightbox="haikyu"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKhaikyu1.webp" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKhaikyu2.webp" data-lightbox="haikyu"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKhaikyu2.webp" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKhaikyu3.webp" data-lightbox="haikyu"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKhaikyu3.webp" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKhaikyu4.webp" data-lightbox="haikyu"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKhaikyu4.webp" id="other"></a>
                     </div>
                 </div>
             </div>
             <div class="grid">
                 <div class="cover">
-                    <a href="https://cheepfish.neocities.org/collection/ARTBOOKponyocover.jpg" data-lightbox="ponyo"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKponyocover.jpg" id="coverimg"></a>
+                    <a href="https://cheepfish.neocities.org/collection/ARTBOOKponyocover.webp" data-lightbox="ponyo"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKponyocover.webp" id="coverimg"></a>
                 </div>
                 <div class="description">
                     <p><b>The Art Of Ponyo On The Cliff By The Sea</b></p>
@@ -292,15 +316,15 @@ p {
                 <div class="extra">
                     <div class="favpage"><p><b>Pages I Like</b></p></div>
                 <div class="images">
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKponyo1.jpg" data-lightbox="ponyo"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKponyo1.jpg" id="other"></a>
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKponyo2.jpg" data-lightbox="ponyo"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKponyo2.jpg" id="other"></a>
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKponyo3.jpg" data-lightbox="ponyo"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKponyo3.jpg" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKponyo1.webp" data-lightbox="ponyo"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKponyo1.webp" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKponyo2.webp" data-lightbox="ponyo"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKponyo2.webp" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKponyo3.webp" data-lightbox="ponyo"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKponyo3.webp" id="other"></a>
                     </div>
                 </div>
             </div>
             <div class="grid">
                 <div class="cover">
-                    <a href="https://cheepfish.neocities.org/collection/ARTBOOKsplatoon3cover.jpg" data-lightbox="splatoon3"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKsplatoon3cover.jpg" id="coverimg"></a>
+                    <a href="https://cheepfish.neocities.org/collection/ARTBOOKsplatoon3cover.webp" data-lightbox="splatoon3"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKsplatoon3cover.webp" id="coverimg"></a>
                 </div>
                 <div class="description">
                     <p><b>Splatoon 3 Ikasu Artbook</b></p>
@@ -308,16 +332,16 @@ p {
                 <div class="extra">
                     <div class="favpage"><p><b>Pages I Like</b></p></div>
                 <div class="images">
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKsplatoon31.jpg" data-lightbox="splatoon3"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKsplatoon31.jpg" id="other"></a>
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKsplatoon32.jpg" data-lightbox="splatoon3"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKsplatoon32.jpg" id="other"></a>
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKsplatoon33.jpg" data-lightbox="splatoon3"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKsplatoon33.jpg" id="other"></a>
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKsplatoon34.jpg" data-lightbox="splatoon3"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKsplatoon34.jpg" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKsplatoon31.webp" data-lightbox="splatoon3"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKsplatoon31.webp" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKsplatoon32.webp" data-lightbox="splatoon3"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKsplatoon32.webp" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKsplatoon33.webp" data-lightbox="splatoon3"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKsplatoon33.webp" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKsplatoon34.webp" data-lightbox="splatoon3"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKsplatoon34.webp" id="other"></a>
                     </div>
                 </div>
             </div>
             <div class="grid">
                 <div class="cover">
-                    <a href="https://cheepfish.neocities.org/collection/ARTBOOKtmntcover.jpg" data-lightbox="tmnt"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKtmntcover.jpg" id="coverimg"></a>
+                    <a href="https://cheepfish.neocities.org/collection/ARTBOOKtmntcover.webp" data-lightbox="tmnt"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKtmntcover.webp" id="coverimg"></a>
                 </div>
                 <div class="description">
                     <p><b>The Art of TMNT Mutant Mayhem</b></p>
@@ -325,16 +349,16 @@ p {
                 <div class="extra">
                     <div class="favpage"><p><b>Pages I Like</b></p></div>
                 <div class="images">
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKtmnt1.jpg" data-lightbox="tmnt"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKtmnt1.jpg" id="other"></a>
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKtmnt2.jpg" data-lightbox="tmnt"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKtmnt2.jpg" id="other"></a>
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKtmnt3.jpg" data-lightbox="tmnt"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKtmnt3.jpg" id="other"></a>
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKtmnt4.jpg" data-lightbox="tmnt"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKtmnt4.jpg" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKtmnt1.webp" data-lightbox="tmnt"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKtmnt1.webp" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKtmnt2.webp" data-lightbox="tmnt"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKtmnt2.webp" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKtmnt3.webp" data-lightbox="tmnt"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKtmnt3.webp" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKtmnt4.webp" data-lightbox="tmnt"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKtmnt4.webp" id="other"></a>
                     </div>
                 </div>
             </div>
             <div class="grid">
                 <div class="cover">
-                    <a href="https://cheepfish.neocities.org/collection/ARTBOOKwanderlustcover.jpg" data-lightbox="wanderlust"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKwanderlustcover.jpg" id="coverimg"></a>
+                    <a href="https://cheepfish.neocities.org/collection/ARTBOOKwanderlustcover.webp" data-lightbox="wanderlust"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKwanderlustcover.webp" id="coverimg"></a>
                 </div>
                 <div class="description">
                     <p><b>Wanderlust: The Art of Yoichi Nishikawa</b></p>
@@ -342,9 +366,9 @@ p {
                 <div class="extra">
                     <div class="favpage"><p><b>Pages I Like</b></p></div>
                 <div class="images">
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKwanderlust1.jpg" data-lightbox="wanderlust"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKwanderlust1.jpg" id="other"></a>
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKwanderlust2.jpg" data-lightbox="wanderlust"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKwanderlust2.jpg" id="other"></a>
-                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKwanderlust3.jpg" data-lightbox="wanderlust"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKwanderlust3.jpg" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKwanderlust1.webp" data-lightbox="wanderlust"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKwanderlust1.webp" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKwanderlust2.webp" data-lightbox="wanderlust"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKwanderlust2.webp" id="other"></a>
+                        <a href="https://cheepfish.neocities.org/collection/ARTBOOKwanderlust3.webp" data-lightbox="wanderlust"><img loading="lazy" src="https://cheepfish.neocities.org/collection/ARTBOOKwanderlust3.webp" id="other"></a>
                     </div>
                 </div>
             </div>
