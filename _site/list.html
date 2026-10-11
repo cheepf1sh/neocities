@@ -1,0 +1,370 @@
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cheepfish.neocities.org/png/icon4tab.png">
+    <title>gone fishin'</title>
+    <link href="_css/stylefont.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+
+  <style>
+    body {
+       background-color: rgb(55, 85, 119);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    main {
+        margin-bottom: 2em;
+        display: grid;
+        place-items: center;
+    }
+
+    .fridge {
+        grid-row: 1 / span 2;
+    }
+    
+    .second {
+        grid-row: 2;
+    }
+
+    .fridge, .second {
+        grid-column: 1 / span 2;
+    }
+
+    .fridge img {
+        width: 50em;
+    }
+
+    .allnote2 {
+        display: grid;   
+        place-items: center;
+        gap: 0.9em;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .allnote2 {
+        grid-template-rows: repeat(6, 1fr);
+        grid-column: 1;
+    }
+
+    section {
+        background-color: rgb(221, 214, 195);
+        padding: 0.5em;
+        width: 200px;
+        height: 200px;
+        font-family: DejaVu Sans Mono, monospace;
+        font-size: 13px;
+    }
+
+    p {
+        font-family: DejaVu Sans Mono, monospace;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        padding-top: 0.3em;
+        padding-bottom: 0.5em;
+        text-align: center;
+    }
+
+    li {
+        margin-left: 0.3em;
+        list-style-type: circle;
+    }
+
+    .all {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 4em;
+    }
+
+    h1 {
+       font-family: "grape";
+       font-size: 4em;
+       margin: 0.1em 0.3em 0.2em 0;
+       color: rgb(18, 26, 37);
+    }
+
+    .fish {
+        width: 10em;
+    }
+
+    .fish2 {
+        display: none;
+        width: 10em;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+    }
+
+    p.sec {
+        display: none;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .fish2 {
+            display: block;
+        }  
+
+        .fish, .fish2 {
+            width: 30%;
+            max-width: 9em;
+            height: fit-content;
+        }
+
+        .all {
+            flex-direction: column;
+            margin-top: 1em;
+        }
+
+        .allnote2 {
+            width: 100%;
+            max-width: fit-content;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0;
+        }
+
+        .second {
+            margin-top: 0.9em;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 1.7em;
+        }
+
+        p.sec {
+            display: block;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        p {
+            display: none;
+        }
+    }
+
+     @media screen and (max-width: 700px) {
+        .allnote2, .allnote3 {
+            grid-template-columns: 1fr;
+        }
+
+        section {
+            width: 100%;
+            max-width: 200px;
+        }
+
+        .fish, .fish2 {
+            display: none;
+        }
+
+        h1 {
+        font-size: clamp(3rem, 9vw, 9rem);
+        margin-bottom: 0;
+        } 
+
+        p {
+            margin-bottom: 1.3em;
+        }
+
+        .title {
+            flex-direction: column;
+            gap: 0;
+        }
+
+     }
+
+
+
+  </style>
+
+  <body>
+<div class="all">
+    <div class="second">
+    <div class="title">
+        <img loading="lazy" src="https://cheepfish.neocities.org/gif/listfish.gif" class="fish2">
+        <h1>Notes</br>For</br>Myself</h1>
+        <img loading="lazy" src="https://cheepfish.neocities.org/gif/listfish.gif" class="fish">
+        <p><a href="https://cheepfish.neocities.org/" style="color: rgb(221, 214, 195);"><- go back home</a></p>
+    </div>
+    <p class="sec"><a href="https://cheepfish.neocities.org/" style="color: rgb(221, 214, 195);"><- go back home</a></p>
+    </div>
+        <div class="allnote2">
+                <section>
+                    <ul>Artists I've Seen Live</ul>
+                    <li>BTS x2</li>
+                    <li>SVT x2</li>
+                    <li>SE SO NEON</li>
+                    <li>NIN x2</li>
+                    <li>Colde</li>
+                    <li>wave to earth</li>
+                    <li>Getdown Services</li>
+                    <li>COIN</li>
+                </section>
+                <section>
+                    <ul>Artists I Want To See Live</ul>
+                    <li>DPR IAN</li>
+                    <li>Red Velvet</li>
+                    <li>Psychedelic Porn Crumpets</li>
+                    <li>KIRARA</li>
+                    <li>Sweet John</li>
+                    <li>Kit Sebastian</li>
+                    <li>NIN (AGAIN....)</li>
+                </section>
+                <section>
+                    <ul>Things I Want To Learn</ul>
+                    <li>Crochet</li>
+                    <li>The Splits</li>
+                    <li>A Handstand</li>
+                    <li>Blender (tears in my eyes as i say this)</li>
+                    <li>After Effects</li>
+                </section>
+                <section>
+                    <ul>Chopping My Arms Off If I Don't Get This Good</ul>
+                    <li><a href="https://x.com/quruiqing" target="_blank">quruiqing</a></li>
+                    <li><a href="https://x.com/asenliyyy" target="_blank">木人舍</a></li>
+                    <li><a href="https://x.com/noobboy_02" target="_blank">noobboy</a></li>
+                    <li><a href="https://x.com/yap1co" target="_blank">YAPICO</a></li>
+                    <li><a href="https://x.com/loveariddle_" target="_blank">riddle</a></li>
+                    <li><a href="https://x.com/min_yum" target="_blank">bumskee</a></li>
+                    <li><a href="https://x.com/neo1900art" target="_blank">neo1900</a></li>
+                    <li><a href="https://x.com/KuroBlood" target="_blank">KuroBlood</a></li>
+                </section>
+                <section>
+                    <ul>Dates I Need To Remember</ul>
+                    <li>December 8th</li>
+                    <li>September 21</li>
+                    <li>67'/68'</li>
+                    <li>August 28</li>
+                    <li>11/30/27</li>
+                    <li>MARCH2027</li>
+                </section>
+                <section>
+                    <ul>Things I Don't Need But Think About</ul>
+                    <li>5 Million Gunplas...</li>
+                    <li><a href="https://www.lego.com/en-us/product/spider-man-vs-doc-ock-subway-train-scene-76321" target="_blank">Spider-Man Super Beautiful and Epic Lego Train</a></li>
+                </section>
+                <section>
+                    <ul>Music Associated With A Shitty Time In My Life</ul>
+                    <li><a href="https://www.youtube.com/watch?v=pQV0WEdT_OE" target="_blank">Post Malone - Circles</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=greRWnaQWc4" target="_blank">Ducktales Theme Song</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=lxPndeAzfwI" target="_blank">YUKIKA - SOUL LADY</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=YHjuxGMnPK8" target="_blank">DPR IAN - Sometimes I'm</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=qdpCBTkTxbc" target="_blank">PREP - Cold Fire</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=gap-zS1VBKo" target="_blank">Doja Cat - Like That</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=hSZGZx9VBzQ" target="_blank">Hana Vu - Aubade</a></li>
+            </section>
+            <section>
+                    <ul>Hyperfixations</ul>
+                    <li>Spider-Man</li>
+                    <li>Pokémon</li>
+                    <li>Mortal Kombat</li>
+                    <li>Splatoon</li>
+                    <li>Gravity Falls</li>
+                    <li>Shugo Chara</li>
+                    <li>Legend of Zelda</li>
+                    <li>Minecraft</li>
+                    <li>Genshart Impact</li>
+                    <li>Warrior Cats</li>
+            </section>
+            <section>
+                    <ul>Foods I Can Eat Forever</ul>
+                    <li>Rice and Polluck Roe</li>
+                    <li>Egg Sandwich</li>
+                    <li>Tomato</li>
+                    <li>Boiled Cauliflower</li>
+                    <li>Spam</li>
+                    <li>Altoids</li>
+                    <li>Most Korean Food</li>
+                    <li>Salmon</li>
+            </section>
+            <section>
+                    <ul>Smells I Like</ul>
+                    <li>Garlic</li>
+                    <li>New Rubber</li>
+                    <li>Mom's Perfume</li>
+                    <li>Concrete After The Rain</li>
+                    <li>Lavender</li>
+                    <li>Doctor's Office</li>
+                    <li>Pine Trees</li>
+                    <li>Fresh Laundry</li>
+                    <li>This One Specific Closet At My Grandparent's House</li>
+            </section>
+            <section>
+                    <ul>Ethnicities I've Been Mistaken For</ul>
+                    <li>Chinese</li>
+                    <li>Filipino</li>
+                    <li>Vietnamese</li>
+                    <li>Japanese</li>
+            </section>
+            <section>
+                    <ul>#1 Songs On My Spotify</ul>
+                    <li>NIN - As Alive As You Need Me To Be (2025)</li>
+                    <li>Battle Tapes - No Good (2024)</li>
+                    <li>NewJeans - OMG (2023)</li>
+                    <li>DPR IAN - Calico (2022)</li>
+                    <li>Magic City Hippies - Indiana (2021)</li>
+                    <li>Doja Cat - Like That (2020)</li>
+            </section>
+            <section>
+                    <ul>Favorite Sauces</ul>
+                    <li>Sriracha</li>
+                    <li>Soy Sauce</li>
+                    <li>Gochujang</li>
+                    <li>Prik Nam Pla</li>
+                    <li>Ssamjang</li>
+            </section>
+            <section>
+                    <ul>Foods I Will FORCE Myself To Make</ul>
+                    <li>Cheesecake</li>
+            </section>
+            <section>
+                    <ul>Things I Actually Need To Get</ul>
+                    <li>Steal My Cousin's Old Chair</li>
+                    <li>New Trash Can</li>
+                    <li>Outlet Plug</li>
+            </section>
+            <section>
+                    <ul>Page Ideas</ul>
+                    <li>Dream Log</li>
+                    <li>Lounge? (for playlist)</li>
+                    <li>List of Korean Food I Fw Heavy bc every single time i see discourse over it i want to tear my hair out</li>
+            </section>
+            <section>
+                    <ul>Reasons to LIVE!!!ORDIE..</ul>
+                    <li>Eating a burger on the side of the road with a friend at 12am</li>
+                    <li>Playing board games with friends/family</li>
+                    <li>Going on walks and listening to Pokemon music</li>
+                    <li>Crying at the beach</li>
+                    <li>Experiencing a really good piece of media</li>
+            </section>
+            <section>
+                    <ul>Things I Enjoy Seeing On Other Sites</ul>
+                    <li>ART</li>
+                    <li>Reviews</li>
+                    <li>Pages Dedicated To That One Thing</li>
+                    <li>Perfume Collections</li>
+                    <li>Music Logs</li>
+            </section>
+        </div>
+
+</div>
+  </body>
+
+  
