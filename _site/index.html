@@ -13,14 +13,14 @@
    
     <script>
   if (navigator.userAgent === "Screenjesus") {
-    document.body.innerHTML = '<img src="https://cheepfish.neocities.org/img/thumb3.png" style="width:100vw;height:100vh;object-fit:cover;">';
+    document.body.innerHTML = '<img src="https://cheepfish.neocities.org/img/thumb4.png" style="width:100vw;height:100vh;object-fit:cover;">';
   }
     </script>
   </head>
 
   <body>
 
-  <div class="grid-container">  
+  <div class="grid">  
 
     <!--BACK-->
         <div class="shelf">
@@ -63,7 +63,7 @@
     <div class="picofmonth">
             <div class="picall">
                 <div class=pictitle><p>IMG OF THE MONTH</p></div>
-                <img src="https://cheepfish.neocities.org/img/picofthemonth5.jpg" id="picid">
+                <img src="https://cheepfish.neocities.org/collection/IMGBOARD71.jpg" id="picid">
             </div>
             <img loading="lazy" src="https://cheepfish.neocities.org/png/postit4.png" id="picimg">
     </div>
@@ -74,7 +74,7 @@
                 <div class="todocontent">
                 <p>- i must talk about games</p>
                 <p>- spiderman shrine</p>
-                <p>- fix layout NOOOO</p>
+                <p>- dream log</p>
                 </div>
             </div>
             <img loading="lazy" src="https://cheepfish.neocities.org/png/postitnote.png" id="postit">
@@ -147,17 +147,9 @@
 
     <div class="updates">
             <div class="updatesall">
-                <div class=todotitle><p>CHANGELOG</p></div>
+                <div class=todotitlea><a href="changelog.html"><p>CHANGELOG</p></a></div>
                 <div class="updatescontent">
-                  <p><strong>9/19/26</strong> - <a href="media.html">Film+TV</a> (aka watch log) up!!! Finally finished foolish <a href="SHRINEgenshinimpact.html">genshin</a> shrine</p>                 
-                  <p><strong>8/15/26</strong> - <a href="SHRINE.html">Shrine page</a> up! Updated <a href="collection.html">collection</a> and <a href="blog.html"> blog.</a></p>
-                  <p><strong>5/12/26</strong> - <a href="blog.html">Blog </a> and <a href="photos.html">photos</a> page up!</a></p>
-                  <p><strong>4/30/26</strong> - <a href="collection.html">Collection page</a> and <a href="sitemap.html">sitemap</a> up! Updated <a href="coolsites.html">COOL sites page.</a></p>
-                  <p><strong>3/29/26</strong> - <a href="coolsites.html">COOL sites page</a> and <a href="resources.html">resources page</a> up!</p>
-                  <p><strong>3/19/26</strong> - <a href="art2.html">Art page</a> and <a href="404.html">404 page</a> up</p>
-                  <p><strong>3/4/26</strong> - Revamped entire homepage</p>
-                  <p><strong>2/26/26</strong> - <a href="about-me.html">About page</a> up</p>
-                  <p><strong>1/24/26</strong> - Finished home page yahooo</p>
+                  <p><strong>10/10/26</strong> - Finally fixed up a bunch of pages! Separate <a href="changelog.html">changelog</a> page up. <a href="list.html">Notes for Myself</a> page up. Answered Sam's <a href="blog.html">100 Odd Q's!</a></p>                                 
                 </div>
             </div>
             <img loading="lazy" src="https://cheepfish.neocities.org/png/postit8.png" id="updatesimg">
@@ -166,25 +158,62 @@
 
     <!--NAVBAR-->
 
-     <div class="main-mid">
+<div class="main-mid">
         <div class="nav-header">
             <div class="nav-title">NAVIGATION</div>
-          </div>
+            <div class="arrow-container">
+            <button id="prevPage" class="t" aria-label="Previous page">
+            </button>
+            <button id="nextPage" class="t" aria-label="Next page">
+            </button>
+</div>
+
+        </div>
         <div class="middle">
-      <nav>
-          <a href="about-me.html"><img loading="lazy" src="https://cheepfish.neocities.org/nav%20button/NAVABOUTLEFT.png" class="button" id="fish1" onmouseover="this.src='https://cheepfish.neocities.org/nav%20button/NAVABOUTLEFT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/nav%20button/NAVABOUTLEFT.png'"></a>
-          <a href="art2.html"><img loading="lazy" src="https://cheepfish.neocities.org/nav%20button/NAVARTRIGHT.png" class="button" id="fish2" onmouseover="this.src='https://cheepfish.neocities.org/nav%20button/NAVARTRIGHT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/nav%20button/NAVARTRIGHT.png'"></a>
-          <a href="blog.html"><img loading="lazy" src="https://cheepfish.neocities.org/nav%20button/NAVBLOGLEFT.png" class="button" id="fish3" onmouseover="this.src='https://cheepfish.neocities.org/nav%20button/NAVBLOGLEFT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/nav%20button/NAVBLOGLEFT.png'"></a>
-          <a href="404.html"><img loading="lazy" src="https://cheepfish.neocities.org/nav%20button/NAVGAMESLEFT.png" class="button" id="fish4" onmouseover="this.src='https://cheepfish.neocities.org/nav%20button/NAVGAMESLEFT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/nav%20button/NAVGAMESLEFT.png'"></a> 
-          <a href="404.html"><img loading="lazy" src="https://cheepfish.neocities.org/nav%20button/NAVMUSICRIGHT.png" class="button" id="fish5" onmouseover="this.src='https://cheepfish.neocities.org/nav%20button/NAVMUSICRIGHT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/nav%20button/NAVMUSICRIGHT.png'"></a>
-          <a href="media.html"><img loading="lazy" src="https://cheepfish.neocities.org/nav%20button/NAVFILMTVLEFT.png" class="button" id="fish6" onmouseover="this.src='https://cheepfish.neocities.org/nav%20button/NAVFILMTVLEFT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/nav%20button/NAVFILMTVLEFT.png'"></a>
-          <a href="SHRINE.html"><img loading="lazy" src="https://cheepfish.neocities.org/nav%20button/NAVSHRINESLEFT.png" class="button" id="fish7" onmouseover="this.src='https://cheepfish.neocities.org/nav%20button/NAVSHRINESLEFT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/nav%20button/NAVSHRINESLEFT.png'"></a>
-          <a href="collection.html"><img loading="lazy" src="https://cheepfish.neocities.org/nav%20button/NAVCOLLECTIONRIGHT.png" class="button" id="fish8" onmouseover="this.src='https://cheepfish.neocities.org/nav%20button/NAVCOLLECTIONRIGHT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/nav%20button/NAVCOLLECTIONRIGHT.png'"></a>
-          <a href="photos.html"><img loading="lazy" src="https://cheepfish.neocities.org/nav%20button/NAVPHOTOSLEFT.png" class="button" id="fish9" onmouseover="this.src='https://cheepfish.neocities.org/nav%20button/NAVPHOTOSLEFT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/nav%20button/NAVPHOTOSLEFT.png'"></a>
-          <a href="404.html"><img loading="lazy" src="https://cheepfish.neocities.org/nav%20button/NAVLIBRARYLEFT.png" class="button" id="fish10" onmouseover="this.src='https://cheepfish.neocities.org/nav%20button/NAVLIBRARYLEFT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/nav%20button/NAVLIBRARYLEFT.png'"></a>
-          <a href="resources.html"><img loading="lazy" src="https://cheepfish.neocities.org/nav%20button/NAVRESOURCESRIGHT.png" class="button" id="fish11" onmouseover="this.src='https://cheepfish.neocities.org/nav%20button/NAVLINKSRIGHT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/nav%20button/NAVRESOURCESRIGHT.png'"></a>
-      </nav>
-      
+      <div class="nav-container">
+        <div class="grid-item">
+          <a href="about-me.html"><img loading="lazy" src="https://cheepfish.neocities.org/nav%20button/NAVABOUTLEFT.png" id="fish1" onmouseover="this.src='https://cheepfish.neocities.org/nav%20button/NAVABOUTLEFT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/nav%20button/NAVABOUTLEFT.png'"></a>
+        </div>  
+        <div class="grid-item">
+          <a href="art2.html"><img loading="lazy" src="https://cheepfish.neocities.org/nav%20button/NAVARTRIGHT.png" id="fish2" onmouseover="this.src='https://cheepfish.neocities.org/nav%20button/NAVARTRIGHT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/nav%20button/NAVARTRIGHT.png'"></a>
+        </div>  
+        <div class="grid-item">
+          <a href="blog.html"><img loading="lazy" src="https://cheepfish.neocities.org/nav%20button/NAVBLOGLEFT.png" id="fish3" onmouseover="this.src='https://cheepfish.neocities.org/nav%20button/NAVBLOGLEFT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/nav%20button/NAVBLOGLEFT.png'"></a>
+        </div>  
+        <div class="grid-item">
+          <a href="404.html"><img loading="lazy" src="https://cheepfish.neocities.org/nav%20button/NAVGAMESLEFT.png" id="fish4" onmouseover="this.src='https://cheepfish.neocities.org/nav%20button/NAVGAMESLEFT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/nav%20button/NAVGAMESLEFT.png'"></a> 
+        </div>  
+        <div class="grid-item">
+          <a href="404.html"><img loading="lazy" src="https://cheepfish.neocities.org/nav%20button/NAVMUSICRIGHT.png" id="fish5" onmouseover="this.src='https://cheepfish.neocities.org/nav%20button/NAVMUSICRIGHT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/nav%20button/NAVMUSICRIGHT.png'"></a>
+        </div>  
+        <div class="grid-item">
+          <a href="media.html"><img loading="lazy" src="https://cheepfish.neocities.org/nav%20button/NAVFILMTVLEFT.png" id="fish6" onmouseover="this.src='https://cheepfish.neocities.org/nav%20button/NAVFILMTVLEFT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/nav%20button/NAVFILMTVLEFT.png'"></a>
+        </div> 
+        <div class="grid-item"> 
+          <a href="SHRINE.html"><img loading="lazy" src="https://cheepfish.neocities.org/nav%20button/NAVSHRINESLEFT.png" id="fish7" onmouseover="this.src='https://cheepfish.neocities.org/nav%20button/NAVSHRINESLEFT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/nav%20button/NAVSHRINESLEFT.png'"></a>
+         </div> 
+         <div class="grid-item">
+          <a href="collection.html"><img loading="lazy" src="https://cheepfish.neocities.org/nav%20button/NAVCOLLECTIONRIGHT.png" id="fish8" onmouseover="this.src='https://cheepfish.neocities.org/nav%20button/NAVCOLLECTIONRIGHT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/nav%20button/NAVCOLLECTIONRIGHT.png'"></a>
+        </div> 
+        <div class="grid-item">
+          <a href="photos.html"><img loading="lazy" src="https://cheepfish.neocities.org/nav%20button/NAVPHOTOSLEFT.png" id="fish9" onmouseover="this.src='https://cheepfish.neocities.org/nav%20button/NAVPHOTOSLEFT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/nav%20button/NAVPHOTOSLEFT.png'"></a>
+        </div>  
+        <div class="grid-item">
+          <a href="404.html"><img loading="lazy" src="https://cheepfish.neocities.org/nav%20button/NAVLIBRARYLEFT.png" id="fish10" onmouseover="this.src='https://cheepfish.neocities.org/nav%20button/NAVLIBRARYLEFT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/nav%20button/NAVLIBRARYLEFT.png'"></a>
+        </div>  
+        <div class="grid-item">
+          <a href="list.html"><img loading="lazy" src="https://cheepfish.neocities.org/nav%20button/NAVNOTESLEFT.png" id="fish11" onmouseover="this.src='https://cheepfish.neocities.org/nav%20button/NAVNOTESLEFT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/nav%20button/NAVNOTESLEFT.png'"></a>
+        </div>
+        <div class="grid-item">
+          <a href="resources.html"><img loading="lazy" src="https://cheepfish.neocities.org/nav%20button/NAVRESOURCESRIGHT.png" id="fish12" onmouseover="this.src='https://cheepfish.neocities.org/nav%20button/NAVLINKSRIGHT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/nav%20button/NAVRESOURCESRIGHT.png'"></a>
+        </div>
+        <div class="grid-item">
+          <a href="404.html"><img loading="lazy" src="https://cheepfish.neocities.org/nav%20button/NAVDREAMSRIGHT.png" id="fish10" onmouseover="this.src='https://cheepfish.neocities.org/nav%20button/NAVDREAMSRIGHT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/nav%20button/NAVDREAMSRIGHT.png'"></a>
+        </div>
+        <div class="grid-item">
+          <a href="https://www.youtube.com/watch?v=FSCUdY048vI" target="_blank"><img loading="lazy" src="https://cheepfish.neocities.org/nav%20button/NAVHMMRIGHT.png" id="fish2" onmouseover="this.src='https://cheepfish.neocities.org/nav%20button/NAVHMMRIGHT2.png'" onmouseout="this.src='https://cheepfish.neocities.org/nav%20button/NAVHMMRIGHT.png'"></a>
+        </div>
+      </div>
         </div><div class="nav-header2"></div></div> 
              
              
@@ -199,10 +228,10 @@
     <!--SECOND TRAY-->
           
     <div class="container2">     
-        <div class="welcome-container">
+        <div class="welcomeyay">
             <div class="buttontank">
                 <div class="top-tank">
-                    <div class="nav-title2">MY BUTTON</div>
+                    <div class="nav-title">MY BUTTON</div>
                 </div>
                 <div class="middle-button">
                     <img loading="lazy" src="https://cheepfish.neocities.org/png/mybuttonbg.png" width="70%" class="buttonbg">
@@ -241,7 +270,7 @@
     <!--THIRD TRAY-->
 
     <div class="container3">     
-        <div class="third-container">
+        <div class="third">
             <div class="currentlytank">
                 <div class="top-tank3">
                     <div class="nav-title">CURRENTLY</div>
@@ -256,10 +285,10 @@
                 </div>
                 <div class="currentlyright">
                   <div class="currentlycontent">
-                    <p><strong>reading:</strong> nothing atm thinking about spiderman</p>
-                    <p><strong>listening to:</strong> Spiderman music</p>
-                    <p><strong>watching:</strong> spiderman....</p>
-                    <p><strong>playing:</strong> nogames only spiderman</p>
+                    <p><strong>reading:</strong> feeling illiterate</p>
+                    <p><strong>listening to:</strong> 終末クロマティック - Namitape</p>
+                    <p><strong>watching:</strong> buncha scary movies</p>
+                    <p><strong>playing:</strong> Kirby and the Forgotten Land</p>
                   </div>
                 </div>
               </div>
@@ -275,9 +304,9 @@
         <div class="title-bar">
           <div class="title-bar-text"><sub><img class="titlebaricon" src="https://files.catbox.moe/tg55zp.png" alt="cd player icon"></sub> CD player</div>
         <div class="title-bar-controls">
-          <button aria-label="Minimize"></button>
-          <button aria-label="Maximize"></button>
-          <button aria-label="Close"></button>
+          <button class="" aria-label="Minimize"></button>
+          <button class="m" aria-label="Maximize"></button>
+          <button class="m" aria-label="Close"></button>
         </div>
         </div>
         <div class="window-body">
@@ -299,13 +328,13 @@
         <table class="controls">
             <tr>
                 <td>
-                    <div class="prev-track" onclick="prevTrack()"><button><img src="https://files.catbox.moe/hhoh1h.png" class="controlimg"></button></div>
+                    <div class="prev-track" onclick="prevTrack()"><button class="m"><img src="https://files.catbox.moe/hhoh1h.png" class="controlimg"></button></div>
                 </td>
                 <td>
-                    <div class="playpause-track" onclick="playpauseTrack()" ><button><img src="https://files.catbox.moe/w93riq.png" class="controlimg"></button></div>
+                    <div class="playpause-track" onclick="playpauseTrack()" ><button class="m"><img src="https://files.catbox.moe/w93riq.png" class="controlimg"></button></div>
                 </td>
                 <td>
-                    <div class="next-track" onclick="nextTrack()"><button><img src="https://files.catbox.moe/p4q9gf.png" class="controlimg"></button></div>
+                    <div class="next-track" onclick="nextTrack()"><button class="m"><img src="https://files.catbox.moe/p4q9gf.png" class="controlimg"></button></div>
                 </td>
             </tr>
         </table>
@@ -365,6 +394,89 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
+</script>
+
+<script>	
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.querySelector(".nav-container");
+  const items = Array.from(container.querySelectorAll(".grid-item"));
+
+  const prevBtn = document.getElementById("prevPage");
+  const nextBtn = document.getElementById("nextPage");
+
+  let currentPage = 0;
+  let itemsPerPage = 1;
+
+  function getColumns() {
+    const styles = getComputedStyle(container);
+    return styles.gridTemplateColumns.split(" ").length;
+  }
+
+  function calculateItemsPerPage() {
+    const item = items[0];
+    if (!item) return;
+
+    const cols = getColumns();
+
+    const containerHeight = container.clientHeight;
+    const rowHeight = item.offsetHeight || 94;
+
+    let rows = Math.max(1, Math.floor(containerHeight / rowHeight));
+
+    itemsPerPage = rows * cols;
+
+    itemsPerPage = Math.floor(itemsPerPage / cols) * cols;
+  }
+
+  function getMaxPage() {
+    return Math.max(0, Math.ceil(items.length / itemsPerPage) - 1);
+  }
+
+  function renderPage() {
+  const start = currentPage * itemsPerPage;
+  const end = start + itemsPerPage;
+
+  items.forEach((item, i) => {
+    item.classList.toggle("active", i >= start && i < end);
+  });
+
+  const maxPage = getMaxPage();
+
+  prevBtn.disabled = currentPage <= 0;
+  nextBtn.disabled = currentPage >= maxPage;
+
+  pageIndicator.textContent = `${currentPage + 1}/${maxPage + 1}`;
+}
+
+  function nextPage() {
+    if (currentPage < getMaxPage()) {
+      currentPage++;
+      renderPage();
+    }
+  }
+
+  function prevPage() {
+    if (currentPage > 0) {
+      currentPage--;
+      renderPage();
+    }
+  }
+
+  nextBtn.addEventListener("click", nextPage);
+  prevBtn.addEventListener("click", prevPage);
+
+  window.addEventListener("resize", () => {
+    calculateItemsPerPage();
+
+    const maxPage = getMaxPage();
+    if (currentPage > maxPage) currentPage = maxPage;
+
+    renderPage();
+  });
+
+  calculateItemsPerPage();
+  renderPage();
+});
 </script>
      
 
