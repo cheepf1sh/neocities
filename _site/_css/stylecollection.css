@@ -44,6 +44,7 @@ h3 {
    gap: 50px;
    z-index: 100;
    grid-row: 3;
+   height: fit-content;
 }
 
 .chest {
@@ -78,4 +79,70 @@ h3 {
 
 .allchest2 {
    grid-column: 1;
+}
+
+.allchestmobile {
+   display: none;
+}
+
+@media screen and (max-width: 1024px) {
+   .main {
+      width: 800px;
+      max-width: 100%;
+   }
+
+   .chest img {
+      width: 80px;
+   }
+   
+   .sand img {
+      width: 650px;
+      margin-top: -50px;
+      z-index: 1;
+   }
+
+   .allchest, .allchest2 {
+      gap: 10px;
+   }
+   
+   h1 {
+      font-size: clamp(0.5rem, 5vw, 3rem);
+      z-index: 10;
+   }
+
+   h3 {
+      font-size: clamp(0.5rem, 5vw, 1rem);
+   }
+
+   
+}
+
+@media screen and (max-width: 600px) {
+   .main {
+      width: 600px;
+      max-width: 100%;
+   }
+
+   .allchestmobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .allchest, .allchest2, .sand {
+      display: none;
+   }
+
+   .allchestmobile {
+      display: flex;
+   }
+
+   h1 {
+      font-size: clamp(0.5rem, 5vw, 3rem);
+      z-index: 10;
+      text-align: center;
+      margin-bottom: 1em;
+   }
+
 }
